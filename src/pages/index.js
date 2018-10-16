@@ -53,30 +53,36 @@ class OffersPage extends React.Component {
       <Layout>
         <div className="offers-page">
           <Helmet
-            title="No Excuses Special Offer - Fitato"
+            title="Dumbbells On Dussehra Offer - Fitato"
           >
-            <meta name="description" content="Be stronger than your excuses! Today's actions are tomorrow's results!" />
+            <meta name="description" content="You Are Better Than Your Excuses! Triumph Over Your Demons!" />
           </Helmet>
             
-            <div className="offers-page-hero" style={{backgroundImage: 'url(' + withPrefix('/static/month-end-special-offer.jpg') + ')'}}>
+            <div className="offers-page-hero" style={{backgroundImage: 'url(' + withPrefix('/static/paper-bg.jpg') + ')'}}>
               <div className="container">
                 <div className="offers-page-hero__wrapper">
-                  {/* <div style={{textAlign: 'center'}}>
-                    <img src={withPrefix('/static/ganesh-visarjan-fitato-offer.png')} className="banner-mobile" alt="ganpati"/>
-                  </div> */}
-                  <h1>Enough With The Excuses, Already!</h1>
-                  <p>There are only 7 days in a week and 'someday' isn't one of them. Let today be the day it all changes for you!</p>
+                  <div style={{textAlign: 'center'}}>
+                    <img src={withPrefix('/static/fitao-dussehra-landing-page.png')} alt="fitato dussehra offer"/>
+                  </div>
+                  <h1>You Are Better Than Your Excuses!<br />Triumph Over Your Demons!</h1>
+                  {/* <p>There are only 7 days in a week and 'someday' isn't one of them. Let today be the day it all changes for you!</p> */}
                 </div>
               </div>
             </div>
+
+            <img src={withPrefix('/static/tri.svg')} className="tri-svg" alt="fitato dussehra offer"/>
+
+            {/* <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+                <path d="M0 0 L50 100 L100 0 Z" />
+            </svg> */}
     
             <div className="offers-page-intro">
               <div className="container">
                 
-                <h2>Presenting the <span className="red">#NoXcuseSale</span></h2>
+                <h2>Dumbbells On Dussehra Offer</h2>
                 {/* <p className="offer-title-highlight"></p> */}
                 <h3>20% off + 30% Cashback On All Fitato Passes*</h3>
-                <p><span className="offer-highlight">Use Coupon Code: <strong>NOXCUSE</strong></span></p>
+                <p><span className="offer-highlight">Use Coupon Code: <strong>DUSSEHRA</strong></span></p>
                 <p style={{fontSize: '1.2em', lineHeight: '2em', paddingTop: '0px'}}>on your Fitato App<br /></p>
                 <p style={{fontSize: '1.3em', fontWeight: 'bold'}}>OR</p>
                 <p style={{fontSize: '1.3em', fontWeight: 'bold', marginBottom: '0.5em'}}>Buy Online Here:</p>
@@ -125,12 +131,12 @@ class OffersPage extends React.Component {
                     </div>
                   </div>
                 </div>
-                <small>* Offer valid for <b>first-time users</b> and till 30<sup>th</sup> September 2018 only.</small>
+                <small>* Offer valid on 17<sup>th</sup> and 18<sup>th</sup> October 2018 only.</small>
 
-                <div className="offers-page-intro__passes-left">
+                {/* <div className="offers-page-intro__passes-left">
                   <h3>For The First 500 Passes Only</h3>
                   <p className="red"><b>{this.state.passesLeft}</b> Passes Left</p>
-                </div>
+                </div> */}
 
                 <div style={{marginTop: '50px'}}>
                   <h4 style={{marginBottom: '5px'}}>Have questions? Let us help.</h4>

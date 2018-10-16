@@ -82,7 +82,8 @@ p, small {
 }
 
 .offers-page-hero {
-  padding: 130px 0;
+  padding-top: 10px;
+  padding-bottom: 150px;
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -90,7 +91,8 @@ p, small {
 }
 
 .offers-page-hero__wrapper {
-  width: 42%;
+  width: 100%;
+  text-align: center;
 }
 
 .banner-mobile {
@@ -106,9 +108,10 @@ p, small {
 }
 
 .offers-page-hero h1 {
-  font-size: 2.8em;
+  font-size: 2.3em;
   line-height: 1.1em;
   margin-bottom: 15px;
+  color: #1e1e1e;
 }
 
 .countdown-timer {
@@ -183,6 +186,8 @@ p, small {
 
 .offers-page-intro {
   padding: 100px 10%;
+  padding-top: 0;
+  margin-top: -180px;
   text-align: center;
 }
 
@@ -456,4 +461,23 @@ p, small {
   to {
     transform: translateY(3px);
   }
+}
+
+/* Big Triangle */
+svg#bigTriangleColor {
+  pointer-events: none;
+  transform: translateY(-100%);
+  background-color: #ffffff;
+}
+
+#bigTriangleColor path {
+  fill: #eeeeee;
+  /* stroke: #005c5c; */
+}
+
+.tri-svg {
+  transform: translateY(-100%);
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
 }
