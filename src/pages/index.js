@@ -53,9 +53,8 @@ class OffersPage extends React.Component {
       <Layout>
         <div className="offers-page">
           <Helmet
-            title="Dumbbells On Dussehra Offer - Fitato"
+            title="Burn Your Excuses Dussehra Offer - Fitato"
           >
-            <meta name="description" content="You Are Better Than Your Excuses! Triumph Over Your Demons!" />
           </Helmet>
             
             <div className="offers-page-hero" style={{backgroundImage: 'url(' + withPrefix('/static/paper-bg.jpg') + ')'}}>
@@ -64,7 +63,7 @@ class OffersPage extends React.Component {
                   <div style={{textAlign: 'center'}}>
                     <img src={withPrefix('/static/fitao-dussehra-landing-page.png')} alt="fitato dussehra offer"/>
                   </div>
-                  <h1>You Are Better Than Your Excuses!<br />Triumph Over Your Demons!</h1>
+                  <h1>You Are Better Than Your Excuses.<br />Triumph Over Your Demons!</h1>
                   {/* <p>There are only 7 days in a week and 'someday' isn't one of them. Let today be the day it all changes for you!</p> */}
                 </div>
               </div>
@@ -79,7 +78,7 @@ class OffersPage extends React.Component {
             <div className="offers-page-intro">
               <div className="container">
                 
-                <h2>Dumbbells On Dussehra Offer</h2>
+                <h2>Burn Your Excuses Dussehra Offer</h2>
                 {/* <p className="offer-title-highlight"></p> */}
                 <h3>20% off + 30% Cashback On All Fitato Passes*</h3>
                 <p><span className="offer-highlight">Use Coupon Code: <strong>DUSSEHRA</strong></span></p>
@@ -99,7 +98,7 @@ class OffersPage extends React.Component {
                       <small>Original Price: &#8377;5,499<br />Get Cashback: &#8377;1,320</small>
                     </div>
                     <div className="offers-page-plans__item--cta">
-                      <a href="https://imjo.in/b2Qn9N" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
+                      <a href="https://imjo.in/jSwGVF" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
                   </div>
                   <div className="offers-page-plans__item">
@@ -113,7 +112,7 @@ class OffersPage extends React.Component {
                       <small>Original Price: &#8377;3,899<br />Get Cashback: &#8377;936</small>
                     </div>
                     <div className="offers-page-plans__item--cta">
-                      <a href="https://imjo.in/wJxJwn" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
+                      <a href="https://imjo.in/brhrrd" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
                   </div>
                   <div className="offers-page-plans__item">
@@ -127,7 +126,7 @@ class OffersPage extends React.Component {
                       <small>Original Price: &#8377;2,199<br />Get Cashback: &#8377;528</small>
                     </div>
                     <div className="offers-page-plans__item--cta">
-                      <a href="https://imjo.in/WQDq6Q" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
+                      <a href="https://imjo.in/uQHgXp" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
                   </div>
                 </div>
@@ -147,7 +146,7 @@ class OffersPage extends React.Component {
               </div>
             </div>
     
-            <div className="offers-page-banner align-center" /* style={{backgroundImage: 'url(' + withPrefix('/static/gradient-bg.png') + ')'}} */>
+            <div className="offers-page-banner align-center">
               <div className="container">
                 <h3 style={{marginBottom: '10px'}}>Don’t Just Wish For A Good Body, Work For It!</h3>
                 <h2>Work out in over 300+ gyms &amp; fitness studios with your single-access Fitato Pass. Come, fall in love with fitness.</h2>
