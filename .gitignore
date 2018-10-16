@@ -1,0 +1,7 @@
+/node_modules/
+/builds/
+/.cache/
+/.firebase/
+/misc/
+public/*
+!/public/static

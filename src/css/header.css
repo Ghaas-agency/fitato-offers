@@ -1,0 +1,14 @@
+.main-header {
+  padding: 15px 20px;
+  /* background-color: #efefef; */
+}
+
+.main-header img {
+  width: 110px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+.menu-icon-link:hover, .menu-icon-link:focus {
+  border-bottom: none;
+}
