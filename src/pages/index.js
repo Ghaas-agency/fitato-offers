@@ -135,7 +135,7 @@ class OffersPage extends React.Component {
                     </div>
                   </div>
                 </div>
-                <small>* Offer valid for first-time users and on 29<sup>th</sup> to 2<sup>nd</sup> November 2018 only.</small>
+                <small>* Offer valid for first-time users and on 29<sup>th</sup> October to 2<sup>nd</sup> November 2018 only.</small>
 
                 {/* <div className="offers-page-intro__passes-left">
                   <h3>For The First 500 Passes Only</h3>
