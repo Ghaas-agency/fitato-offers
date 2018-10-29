@@ -4,6 +4,14 @@ p, small {
   color: #616161;
 }
 
+.line {
+  height: 4px;
+  width: 100px;
+  background-color: #EB1F2E;
+  margin: 25px 0;
+  border-radius: 5px;
+}
+
 /* Pricing table. */
 
 .pricing-row {
@@ -82,17 +90,18 @@ p, small {
 }
 
 .offers-page-hero {
-  padding-top: 2%;
-  padding-bottom: 150px;
-  background-position: top;
+  margin-top: -80px;
+  padding-top: 200px;
+  padding-bottom: 300px;
+  background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
+  /* background-color: rgba(0, 0, 0, 0.75); */
 }
 
 .offers-page-hero__wrapper {
   width: 100%;
-  text-align: center;
 }
 
 .banner-mobile {
@@ -103,15 +112,15 @@ p, small {
   font-size: 1.3em;
   line-height: 1.3em;
   margin-bottom: 0;
-  color: #b3b3b3;
   margin-top: 0;
+  color: #ffffff;
 }
 
 .offers-page-hero h1 {
   font-size: 2.3em;
   line-height: 1.1em;
   margin-bottom: 15px;
-  color: #1e1e1e;
+  color: #EB1F2E;
 }
 
 .countdown-timer {
@@ -131,8 +140,11 @@ p, small {
 
 @media (max-width: 480px) {
   .offers-page-hero {
-    padding-top: 50px;
-    padding-bottom: 70px;
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-size: 100%;
   }
 
   .offers-page-hero h1 {
@@ -140,10 +152,16 @@ p, small {
   }
 }
 
+@media (max-width: 380px) {
+  .offers-page-hero {
+    min-height: 105vh;
+  }
+}
+
 .offers-page-intro {
   padding: 100px 10%;
-  padding-top: 0;
-  margin-top: -180px;
+  padding-top: 20px;
+  margin-top: 0px;
   text-align: center;
 }
 
@@ -186,13 +204,15 @@ p, small {
 
 @media (max-width: 1200px) {
   .offers-page-intro {
-    margin-top: -100px;
+    padding: 100px 10%;
+    padding-top: 20px;
+    margin-top: 0px;
   }
 }
 
 @media (max-width: 979px) {
   .offers-page-intro {
-    margin-top: -70px;
+    margin-top: 0px;
   }
 }
 
@@ -200,14 +220,13 @@ p, small {
   .offers-page-intro {
     padding: 100px 2%;
     padding-top: 0;
-    margin-top: -180px;
+    margin-top: 0px;
     text-align: center;
   }
 }
 
 @media (max-width: 480px) {
   .offers-page-intro {
-    padding-top: 150px;
     text-align: center;
   }
 
@@ -299,9 +318,14 @@ p, small {
 }
 
 .offers-page-plans__item--price {
-  font-size: 34px;
-  font-weight: 600;
+  font-size: 44px;
+  font-weight: 700;
   color: #EB1F2E;
+}
+
+.offers-page-plans__item--price-strike {
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 979px) {

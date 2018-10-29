@@ -53,23 +53,28 @@ class OffersPage extends React.Component {
       <Layout>
         <div className="offers-page">
           <Helmet
-            title="Burn Your Excuses Dussehra Offer - Fitato"
+            title="The Wefit Offer - Fitato"
           >
           </Helmet>
             
-            <div className="offers-page-hero" style={{backgroundImage: 'url(' + withPrefix('/static/paper-bg.jpg') + ')'}}>
+            <div className="offers-page-hero">
               <div className="container">
                 <div className="offers-page-hero__wrapper">
-                  <div style={{textAlign: 'center'}}>
+                  {/* <div style={{textAlign: 'center'}}>
                     <img src={withPrefix('/static/fitao-dussehra-landing-page.png')} alt="fitato dussehra offer"/>
-                  </div>
-                  <h1>You Are Better Than Your Excuses.<br />Triumph Over Your Demons!</h1>
-                  {/* <p>There are only 7 days in a week and 'someday' isn't one of them. Let today be the day it all changes for you!</p> */}
+                  </div> */}
+                  <h1>Your Fitness Freedom</h1>
+                  <div className="line"></div>
+                  <p>Presenting the WEFIT Sale!<br />One more reason. One less excuse!</p>
                 </div>
               </div>
             </div>
 
-            <img src={withPrefix('/static/tri.svg')} className="tri-svg" alt="fitato dussehra offer"/>
+            <style dangerouslySetInnerHTML={{
+              __html: `.offers-page-hero {background-image: url('${withPrefix('/static/hero-bg.jpg')}');}@media only screen and (max-width: 767px) {.offers-page-hero {background-image: url('${withPrefix('/static/hero-bg-small.jpg')}');}}`
+            }}/>
+
+            {/* <img src={withPrefix('/static/tri.svg')} className="tri-svg" alt="fitato dussehra offer"/> */}
 
             {/* <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
                 <path d="M0 0 L50 100 L100 0 Z" />
@@ -78,10 +83,10 @@ class OffersPage extends React.Component {
             <div className="offers-page-intro">
               <div className="container">
                 
-                <h2>Burn Your Excuses Dussehra Offer</h2>
+                <h2>The Wefit Offer!</h2>
                 {/* <p className="offer-title-highlight"></p> */}
-                <h3>20% off + 30% Cashback On All Fitato Passes*</h3>
-                <p><span className="offer-highlight">Use Coupon Code: <strong>DUSSEHRA</strong></span></p>
+                <h3>20% Off + 30% Cashback On All Fitato Passes*</h3>
+                <p><span className="offer-highlight">Use Coupon Code: <strong>WEFIT</strong></span></p>
                 <p style={{fontSize: '1.2em', lineHeight: '2em', paddingTop: '0px'}}>on your Fitato App<br /></p>
                 <p style={{fontSize: '1.3em', fontWeight: 'bold'}}>OR</p>
                 <p style={{fontSize: '1.3em', fontWeight: 'bold', marginBottom: '0.5em'}}>Buy Online Here:</p>
@@ -93,12 +98,12 @@ class OffersPage extends React.Component {
                     </div>
                     <div className="offers-page-plans__item--body">
                       <p>Purchase the Fitato Quarterly pass and get unlimited access to every Fitato partner facility for 3 months!</p>
+                      <p className="offers-page-plans__item--price-strike"><strike>&#8377;5,499</strike></p>
                       <p className="offers-page-plans__item--price">&#8377;4,399</p>
-                      {/* <small>Original Price: &#8377;5,499</small> */}
-                      <small>Original Price: &#8377;5,499<br />Get Cashback: &#8377;1,320</small>
+                      <small>Get Cashback: &#8377;1,320</small>
                     </div>
                     <div className="offers-page-plans__item--cta">
-                      <a href="https://imjo.in/jSwGVF" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
+                      <a href="https://imjo.in/faWD3Y" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
                   </div>
                   <div className="offers-page-plans__item">
@@ -107,12 +112,12 @@ class OffersPage extends React.Component {
                     </div>
                     <div className="offers-page-plans__item--body">
                       <p>Purchase the Fitato Bi-Monthly pass and get unlimited  access to every Fitato partner facility for 2 months!</p>
+                      <p className="offers-page-plans__item--price-strike"><strike>&#8377;3,899</strike></p>
                       <p className="offers-page-plans__item--price">&#8377;3,119</p>
-                      {/* <small>Original Price: &#8377;3,899</small> */}
-                      <small>Original Price: &#8377;3,899<br />Get Cashback: &#8377;936</small>
+                      <small>Get Cashback: &#8377;936</small>
                     </div>
                     <div className="offers-page-plans__item--cta">
-                      <a href="https://imjo.in/brhrrd" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
+                      <a href="https://imjo.in/UUbjfu" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
                   </div>
                   <div className="offers-page-plans__item">
@@ -121,16 +126,16 @@ class OffersPage extends React.Component {
                     </div>
                     <div className="offers-page-plans__item--body">
                       <p>Purchase the Fitato Monthly pass and get unlimited access to every Fitato partner facility for  1 month!</p>
+                      <p className="offers-page-plans__item--price-strike"><strike>&#8377;2,199</strike></p>
                       <p className="offers-page-plans__item--price">&#8377;1,759</p>
-                      {/* <small>Original Price: &#8377;2,199</small> */}
-                      <small>Original Price: &#8377;2,199<br />Get Cashback: &#8377;528</small>
+                      <small>Get Cashback: &#8377;528</small>
                     </div>
                     <div className="offers-page-plans__item--cta">
-                      <a href="https://imjo.in/uQHgXp" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
+                      <a href="https://imjo.in/JgDgDQ" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
                   </div>
                 </div>
-                <small>* Offer valid for first-time users and on 17<sup>th</sup> and 18<sup>th</sup> October 2018 only.</small>
+                <small>* Offer valid for first-time users and on 29<sup>th</sup> to 2<sup>nd</sup> November 2018 only.</small>
 
                 {/* <div className="offers-page-intro__passes-left">
                   <h3>For The First 500 Passes Only</h3>
