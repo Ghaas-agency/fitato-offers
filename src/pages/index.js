@@ -53,7 +53,7 @@ class OffersPage extends React.Component {
       <Layout>
         <div className="offers-page">
           <Helmet
-            title="The Wefit Offer - Fitato"
+            title="The WEFIT Offer | Fitato"
           >
           </Helmet>
             
@@ -65,7 +65,7 @@ class OffersPage extends React.Component {
                   </div> */}
                   <h1>Your Fitness Freedom</h1>
                   <div className="line"></div>
-                  <p>Presenting the WEFIT Sale!<br />One more reason. One less excuse!</p>
+                  <p>Presenting the WEFIT Sale.<br />One more reason. One less excuse.</p>
                 </div>
               </div>
             </div>
@@ -83,7 +83,7 @@ class OffersPage extends React.Component {
             <div className="offers-page-intro">
               <div className="container">
                 
-                <h2>The Wefit Offer!</h2>
+                <h2>The WEFIT Offer!</h2>
                 {/* <p className="offer-title-highlight"></p> */}
                 <h3>20% Off + 30% Cashback On All Fitato Passes*</h3>
                 <p><span className="offer-highlight">Use Coupon Code: <strong>WEFIT</strong></span></p>
