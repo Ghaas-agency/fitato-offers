@@ -67,7 +67,7 @@ class OffersPage extends React.Component {
                   <div className="line"></div>
                   <p>Get <span className="yellow">100% Cashback</span><br />On All Fitato Passes</p>
                   <p className="move-down-icon-animate">
-                    <img src={withPrefix('/static/icons/arrow-down.svg')} width="25" className="down-arrow"/>
+                    <img src={withPrefix('/static/icons/arrow-down.svg')} width="25" className="down-arrow" alt="down arrow"/>
                     Scroll down for the exclusive FITFEST offer
                   </p>
                 </div>
