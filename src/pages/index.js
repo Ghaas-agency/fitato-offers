@@ -66,10 +66,10 @@ class OffersPage extends React.Component {
                   <h1>#BeAPataakha</h1>
                   <div className="line"></div>
                   <p>Get <span className="yellow">100% Cashback</span><br />On All Fitato Passes</p>
-                  {/* <p className="move-down-icon-animate">
+                  <p className="move-down-icon-animate">
                     <img src={withPrefix('/static/icons/arrow-down.svg')} width="25" className="down-arrow"/>
                     Scroll down for the exclusive FITFEST offer
-                  </p> */}
+                  </p>
                 </div>
               </div>
               <img src={withPrefix('/static/top-right.png')} alt="" className="offers-page-hero--prop__top-right"/>
@@ -77,7 +77,7 @@ class OffersPage extends React.Component {
             </div>
 
             <style dangerouslySetInnerHTML={{
-              __html: `.offers-page-hero {background-image: url('${withPrefix('/static/web-landing-page.jpg')}');}@media only screen and (max-width: 767px) {.offers-page-hero {background-image: url('${withPrefix('/static/hero-bg-small.jpg')}');}}`
+              __html: `.offers-page-hero {background-image: url('${withPrefix('/static/web-landing-page.jpg')}');}@media only screen and (max-width: 767px) {.offers-page-hero {background-image: url('${withPrefix('/static/web-landing-page-mobile.jpg')}');}}`
             }}/>
 
             {/* <img src={withPrefix('/static/tri.svg')} className="tri-svg" alt="fitato dussehra offer"/> */}
