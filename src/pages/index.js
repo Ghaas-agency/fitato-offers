@@ -111,7 +111,7 @@ class OffersPage extends React.Component {
                       <p style={{margin: '0px', fontWeight: '700'}}>Get 100% Cashback</p>
                     </div>
                     <div className="offers-page-plans__item--cta">
-                      <a href="https://imjo.in/faWD3Y" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
+                      <a href="https://imjo.in/x9Jr6c" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
                   </div>
                   <div className="offers-page-plans__item">
@@ -127,7 +127,7 @@ class OffersPage extends React.Component {
                       <p style={{margin: '0px', fontWeight: '700'}}>Get 100% Cashback</p>
                     </div>
                     <div className="offers-page-plans__item--cta">
-                      <a href="https://imjo.in/UUbjfu" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
+                      <a href="https://imjo.in/67wHbA" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
                   </div>
                   <div className="offers-page-plans__item">
@@ -143,7 +143,7 @@ class OffersPage extends React.Component {
                       <p style={{margin: '0px', fontWeight: '700'}}>Get 100% Cashback</p>
                     </div>
                     <div className="offers-page-plans__item--cta">
-                      <a href="https://imjo.in/JgDgDQ" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
+                      <a href="https://imjo.in/Z2fERu" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
                   </div>
                 </div>
