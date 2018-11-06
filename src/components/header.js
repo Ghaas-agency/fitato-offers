@@ -11,12 +11,12 @@ class Header extends Component {
         <div className="container">
           <a className="menu-icon-link" href="https://www.fitato.fit">
             <img
-              src={withPrefix('/static/fitato-logo-white.svg')}
+              src={withPrefix('/static/fitato-logo-colored.svg')}
               title='Fitato'
               alt="fitato logo"
             />
           </a>
-          <a style={{float: 'right', marginTop: '10px', color: '#aaa'}} href="tel:+918200396237">Contact us</a>
+          <a className="menu-link" href="tel:+918200396237">Contact us</a>
         </div>
       </div>
     )

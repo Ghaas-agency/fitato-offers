@@ -7,64 +7,13 @@ p, small {
 .line {
   height: 4px;
   width: 100px;
-  background-color: #EB1F2E;
+  background-color: #ffffff;
   margin: 25px 0;
   border-radius: 5px;
 }
 
-/* Pricing table. */
-
-.pricing-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 50px 0;
-  justify-content: center;
-  align-items: center;
-}
-
-.pricing-col {
-  flex: 1;
-  margin: 10px;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #ffffff;
-  min-width: 230px;
-  max-width: 350px;
-}
-
-.pricing-col__head {
-  padding: 10px;
-  padding-top: 20px;
-}
-
-.pricing-col__head h3 {
-  margin-bottom: 0;
-  color: #EB1F2E;
-  text-transform: uppercase;
-}
-
-.pricing-col__body {
-  padding: 30px 30px 10px 30px;
-  border-top: 1px solid #efefef;
-  font-size: 1.1em;
-}
-
-.pricing-col__body--price {
-  font-size: 2em;
-  line-height: 1.3em;
-  color: #EB1F2E;
-  font-weight: bold;
-}
-
-.pricing-col__body--price strike {
-  font-size: 0.75em;
-  color: #1e1e1e;
-  font-weight: normal;
-}
-
-.pricing-col__cta {
-  padding: 25px 20px;
-  border-top: 1px solid #efefef;
+.yellow {
+  color: #fede0d;
 }
 
 /* offers page. */
@@ -90,13 +39,31 @@ p, small {
 }
 
 .offers-page-hero {
-  margin-top: -100px;
+  /* margin-top: -100px; */
   padding-top: 170px;
-  padding-bottom: 250px;
-  background-position: center bottom;
+  padding-bottom: 220px;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
+  background-color: #EB1F2E;
+  position: relative;
+}
+
+.offers-page-hero--prop__top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 7%;
+  margin: 0;
+}
+
+.offers-page-hero--prop__bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 12%;
+  margin: 0;
 }
 
 .offers-page-hero__wrapper {
@@ -108,7 +75,7 @@ p, small {
 }
 
 .offers-page-hero p {
-  font-size: 1.3em;
+  font-size: 2em;
   line-height: 1.3em;
   margin-bottom: 0;
   margin-top: 0;
@@ -119,9 +86,9 @@ p, small {
   font-size: 4em;
   line-height: 1.1em;
   margin-bottom: 15px;
-  color: #EB1F2E;
-  text-transform: uppercase;
-  font-style: italic;
+  color: #fede0d;
+  /* text-transform: uppercase;
+  font-style: italic; */
 }
 
 .countdown-timer {
@@ -166,7 +133,7 @@ p, small {
 
 .offers-page-intro {
   padding: 100px 10%;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   margin-top: 0px;
   text-align: center;
 }
@@ -295,7 +262,7 @@ p, small {
   flex: 1;
   min-width: 300px;
   max-width: 450px;
-  border-radius: 3px;
+  border-radius: 5px;
   border: 1px solid #dddddd;
   margin: 0 -0.5px;
 }
@@ -373,7 +340,7 @@ p, small {
 }
 
 /* Modal */
-
+/* 
 .workplace-modalbg {
   position: fixed;
   top: 0;
@@ -450,6 +417,12 @@ p, small {
     width: 80%;
     left: 10%;
   }
+} */
+
+p.move-down-icon-animate {
+  font-size: 16px;
+  text-align: left;
+  padding-top: 100px;
 }
 
 .down-arrow {
@@ -471,6 +444,7 @@ p, small {
 }
 
 /* Big Triangle */
+
 svg#bigTriangleColor {
   pointer-events: none;
   transform: translateY(-100%);

@@ -53,7 +53,7 @@ class OffersPage extends React.Component {
       <Layout>
         <div className="offers-page">
           <Helmet
-            title="The WEFIT Offer | Fitato"
+            title="The FITFEST Offer | Fitato"
           >
           </Helmet>
             
@@ -63,15 +63,21 @@ class OffersPage extends React.Component {
                   {/* <div style={{textAlign: 'center'}}>
                     <img src={withPrefix('/static/fitao-dussehra-landing-page.png')} alt="fitato dussehra offer"/>
                   </div> */}
-                  <h1>Your Fitness Freedom</h1>
+                  <h1>#BeAPataakha</h1>
                   <div className="line"></div>
-                  <p>Presenting the WEFIT Sale.<br />One more reason. One less excuse.</p>
+                  <p>Get <span className="yellow">100% Cashback</span><br />On All Fitato Passes</p>
+                  {/* <p className="move-down-icon-animate">
+                    <img src={withPrefix('/static/icons/arrow-down.svg')} width="25" className="down-arrow"/>
+                    Scroll down for the exclusive FITFEST offer
+                  </p> */}
                 </div>
               </div>
+              <img src={withPrefix('/static/top-right.png')} alt="" className="offers-page-hero--prop__top-right"/>
+              <img src={withPrefix('/static/bottom-left.png')} alt="" className="offers-page-hero--prop__bottom-left"/>
             </div>
 
             <style dangerouslySetInnerHTML={{
-              __html: `.offers-page-hero {background-image: url('${withPrefix('/static/hero-bg.jpg')}');}@media only screen and (max-width: 767px) {.offers-page-hero {background-image: url('${withPrefix('/static/hero-bg-small.jpg')}');}}`
+              __html: `.offers-page-hero {background-image: url('${withPrefix('/static/web-landing-page.jpg')}');}@media only screen and (max-width: 767px) {.offers-page-hero {background-image: url('${withPrefix('/static/hero-bg-small.jpg')}');}}`
             }}/>
 
             {/* <img src={withPrefix('/static/tri.svg')} className="tri-svg" alt="fitato dussehra offer"/> */}
@@ -83,10 +89,10 @@ class OffersPage extends React.Component {
             <div className="offers-page-intro">
               <div className="container">
                 
-                <h2>The WEFIT Offer!</h2>
+                <h2>The FITFEST Offer!</h2>
                 {/* <p className="offer-title-highlight"></p> */}
-                <h3>20% Off + 30% Cashback On All Fitato Passes*</h3>
-                <p><span className="offer-highlight">Use Coupon Code: <strong>WEFIT</strong></span></p>
+                <h3>100% Cashback On All Fitato Passes*</h3>
+                <p><span className="offer-highlight">Use Coupon Code: <strong>FITFEST</strong></span></p>
                 <p style={{fontSize: '1.2em', lineHeight: '2em', paddingTop: '0px'}}>on your Fitato App<br /></p>
                 <p style={{fontSize: '1.3em', fontWeight: 'bold'}}>OR</p>
                 <p style={{fontSize: '1.3em', fontWeight: 'bold', marginBottom: '0.5em'}}>Buy Online Here:</p>
@@ -98,9 +104,11 @@ class OffersPage extends React.Component {
                     </div>
                     <div className="offers-page-plans__item--body">
                       <p>Purchase the Fitato Quarterly pass and get unlimited access to every Fitato partner facility for 3 months!</p>
-                      <p className="offers-page-plans__item--price-strike"><strike>&#8377;5,499</strike></p>
+                      {/* <p className="offers-page-plans__item--price-strike"><strike>&#8377;5,499</strike></p>
                       <p className="offers-page-plans__item--price">&#8377;4,399</p>
-                      <small>Get Cashback: &#8377;1,320</small>
+                      <small>Get Cashback: &#8377;1,320</small> */}
+                      <p className="offers-page-plans__item--price" style={{margin: '40px 0 20px 0'}}>&#8377;5,499</p>
+                      <p style={{margin: '0px', fontWeight: '700'}}>Get 100% Cashback</p>
                     </div>
                     <div className="offers-page-plans__item--cta">
                       <a href="https://imjo.in/faWD3Y" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
@@ -112,9 +120,11 @@ class OffersPage extends React.Component {
                     </div>
                     <div className="offers-page-plans__item--body">
                       <p>Purchase the Fitato Bi-Monthly pass and get unlimited  access to every Fitato partner facility for 2 months!</p>
-                      <p className="offers-page-plans__item--price-strike"><strike>&#8377;3,899</strike></p>
+                      {/* <p className="offers-page-plans__item--price-strike"><strike>&#8377;3,899</strike></p>
                       <p className="offers-page-plans__item--price">&#8377;3,119</p>
-                      <small>Get Cashback: &#8377;936</small>
+                      <small>Get Cashback: &#8377;936</small> */}
+                      <p className="offers-page-plans__item--price" style={{margin: '40px 0 20px 0'}}>&#8377;3,899</p>
+                      <p style={{margin: '0px', fontWeight: '700'}}>Get 100% Cashback</p>
                     </div>
                     <div className="offers-page-plans__item--cta">
                       <a href="https://imjo.in/UUbjfu" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
@@ -126,16 +136,18 @@ class OffersPage extends React.Component {
                     </div>
                     <div className="offers-page-plans__item--body">
                       <p>Purchase the Fitato Monthly pass and get unlimited access to every Fitato partner facility for  1 month!</p>
-                      <p className="offers-page-plans__item--price-strike"><strike>&#8377;2,199</strike></p>
+                      {/* <p className="offers-page-plans__item--price-strike"><strike>&#8377;2,199</strike></p>
                       <p className="offers-page-plans__item--price">&#8377;1,759</p>
-                      <small>Get Cashback: &#8377;528</small>
+                      <small>Get Cashback: &#8377;528</small> */}
+                      <p className="offers-page-plans__item--price" style={{margin: '40px 0 20px 0'}}>&#8377;2,199</p>
+                      <p style={{margin: '0px', fontWeight: '700'}}>Get 100% Cashback</p>
                     </div>
                     <div className="offers-page-plans__item--cta">
                       <a href="https://imjo.in/JgDgDQ" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
                   </div>
                 </div>
-                <small>* Offer valid for first-time users and till 31<sup>th</sup> October 2018 only.</small>
+                <small>* Offer valid for first-time users and till 13<sup>th</sup> November 2018 only.</small>
 
                 {/* <div className="offers-page-intro__passes-left">
                   <h3>For The First 500 Passes Only</h3>
@@ -147,7 +159,7 @@ class OffersPage extends React.Component {
                   {/* <span onClick={this.handleClick} className="button">Talk to us</span> */}
                   <a href="tel:+918200396237" className="button">Talk to us</a>
                 </div>
-                {/* <p style={{textAlign: 'left', marginTop: '50px'}}><img src={downArrow} width="25" className="down-arrow"/>Scroll down for the Exclusive Fitfam Offer</p> */}
+                
               </div>
             </div>
     
@@ -157,68 +169,7 @@ class OffersPage extends React.Component {
                 <h2>Work out in over 300+ gyms &amp; fitness studios with your single-access Fitato Pass. Come, fall in love with fitness.</h2>
               </div>
             </div>
-    
-            {/* <div className="offers-page-exclusive">
-              <div className="container">
-                <h2>Exclusive Raksha Bandhan Fitfam Offer*</h2>
-    
-                <div className="pricing-row">
-                  <div className="pricing-col">
-                    <div className="pricing-col__head">
-                      <h3>5 Siblings</h3>
-                    </div>
-                    <div className="pricing-col__body">
-                      <p>Group of 5 purchasing the 3-month Fitato Pass together</p>
-                      <p className="pricing-col__body--price"><strike>₹27,495</strike><br/>₹19,000</p>
-                    </div>
-                    <div className="pricing-col__cta">
-                      <a href="https://imjo.in/zaJZPk" target="_blank" rel="noopener" className="button button-fluid">Buy Now</a>
-                    </div>
-                  </div>
-                  
-                  <div className="pricing-col">
-                    <div className="pricing-col__head">
-                      <h3>3 Siblings</h3>
-                    </div>
-                    <div className="pricing-col__body">
-                      <p>Group of 3 purchasing the 3-month Fitato Pass together</p>
-                      <p className="pricing-col__body--price"><strike>₹16,497</strike><br/>₹12,000</p>
-                    </div>
-                    <div className="pricing-col__cta">
-                      <a href="https://imjo.in/6mvyEf" target="_blank" rel="noopener" className="button button-fluid">Buy Now</a>
-                    </div>
-                  </div>
-    
-                  <div className="pricing-col">
-                    <div className="pricing-col__head">
-                      <h3>2 Siblings</h3>
-                    </div>
-                    <div className="pricing-col__body">
-                      <p>Group of 2 purchasing the 3-month Fitato Pass together</p>
-                      <p className="pricing-col__body--price"><strike>₹10,998</strike><br/>₹8,200</p>
-                    </div>
-                    <div className="pricing-col__cta">
-                      <a href="https://imjo.in/xAqb2Q" target="_blank" rel="noopener" className="button button-fluid">Buy Now</a>
-                    </div>
-                  </div>
-    
-                </div>
-                <div style={{textAlign: 'center', marginBottom: '50px', marginTop: '-40px'}}><small><em>*Valid Till 26th August Only</em></small></div>
-    
-                <ul>
-                  <li>Post the payment, you'll receive a confirmation call and email as soon as your payment is processed.</li>
-                  <li>The email will have custom 100% off codes which your siblings can use to activate their passes on their respective mobile apps.</li>
-                  <li>The pass starts when the user enters the activation code on the app.</li>
-                  <li>The Fitato pass will give each user who is part of the squad unlimited access to all the Fitato partner gyms & fitness studios across the city of Pune for a period of 3 months.</li>
-                </ul>
-                
-                <div className="offers-page-exclusive__contact">
-                  <h4>Need recommendations or a crafted plan?</h4>
-                  <a href="tel:+918200396237" className="button">Speak to us</a>
-                </div>
-              </div>
-            </div> */}
-    
+
         </div>
         <DownloadSwipe />
 
