@@ -275,7 +275,7 @@ p, small {
   -ms-flex: 1;
   flex: 1;
   min-width: 300px;
-  max-width: 450px;
+  max-width: 350px;
   border-radius: 5px;
   border: 1px solid #dddddd;
   margin: 0 -0.5px;
@@ -296,7 +296,7 @@ p, small {
 }
 
 .offers-page-plans__item--body {
-  padding: 20px 30px;
+  padding: 20px 5%;
 }
 
 .offers-page-plans__item--cta {
@@ -313,6 +313,13 @@ p, small {
 .offers-page-plans__item--price-strike {
   font-size: 22px;
   margin-bottom: 20px;
+}
+
+.offers-page-plans__item--get-cb {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 10px;
 }
 
 @media (max-width: 979px) {

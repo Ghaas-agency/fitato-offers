@@ -95,7 +95,7 @@ class OffersPage extends React.Component {
                 <p><span className="offer-highlight">Use Coupon Code: <strong>FITFEST</strong></span></p>
                 <p style={{fontSize: '1.2em', lineHeight: '2em', paddingTop: '0px'}}>on your Fitato App<br /></p>
                 <p style={{fontSize: '1.3em', fontWeight: 'bold'}}>OR</p>
-                <p style={{fontSize: '1.3em', fontWeight: 'bold', marginBottom: '0.5em'}}>Buy Online Here:</p>
+                <p style={{fontSize: '1.3em', fontWeight: 'bold', marginBottom: '0.5em'}}>Pre-Book Here:</p>
                 
                 <div className="offers-page-plans__items">
                   <div className="offers-page-plans__item">
@@ -108,7 +108,7 @@ class OffersPage extends React.Component {
                       <p className="offers-page-plans__item--price">&#8377;4,399</p>
                       <small>Get Cashback: &#8377;1,320</small> */}
                       <p className="offers-page-plans__item--price" style={{margin: '40px 0 20px 0'}}>&#8377;5,499</p>
-                      <p style={{margin: '0px', fontWeight: '700'}}>Get 100% Cashback</p>
+                      <p className="offers-page-plans__item--get-cb">Get 100% Cashback</p>
                     </div>
                     <div className="offers-page-plans__item--cta">
                       <a href="https://imjo.in/x9Jr6c" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
@@ -124,7 +124,7 @@ class OffersPage extends React.Component {
                       <p className="offers-page-plans__item--price">&#8377;3,119</p>
                       <small>Get Cashback: &#8377;936</small> */}
                       <p className="offers-page-plans__item--price" style={{margin: '40px 0 20px 0'}}>&#8377;3,899</p>
-                      <p style={{margin: '0px', fontWeight: '700'}}>Get 100% Cashback</p>
+                      <p className="offers-page-plans__item--get-cb">Get 100% Cashback</p>
                     </div>
                     <div className="offers-page-plans__item--cta">
                       <a href="https://imjo.in/67wHbA" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
@@ -140,7 +140,7 @@ class OffersPage extends React.Component {
                       <p className="offers-page-plans__item--price">&#8377;1,759</p>
                       <small>Get Cashback: &#8377;528</small> */}
                       <p className="offers-page-plans__item--price" style={{margin: '40px 0 20px 0'}}>&#8377;2,199</p>
-                      <p style={{margin: '0px', fontWeight: '700'}}>Get 100% Cashback</p>
+                      <p className="offers-page-plans__item--get-cb">Get 100% Cashback</p>
                     </div>
                     <div className="offers-page-plans__item--cta">
                       <a href="https://imjo.in/Z2fERu" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
@@ -148,6 +148,8 @@ class OffersPage extends React.Component {
                   </div>
                 </div>
                 <small>* Offer valid for first-time users and till 13<sup>th</sup> November 2018 only.</small>
+                <br/>
+                <small>Cashback will be credited to your Fitato wallet.</small>
 
                 {/* <div className="offers-page-intro__passes-left">
                   <h3>For The First 500 Passes Only</h3>
