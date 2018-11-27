@@ -53,9 +53,9 @@ export default ({ children }) => (
           <meta name="al:android:package" content="fit.fitato.health"/>
           <meta name="al:android:app_name" content="Fitato: One Pass to Fitness"/>
 
-          <script type="text/javascript">
+          {/* <script type="text/javascript">
             {`!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-M6HNZB",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer");`}
-          </script>
+          </script> */}
 
           <link rel="shortcut icon" type="image/png" href={withPrefix('/static/fitato-icon-16.png')}></link>
           <link rel="apple-touch-icon" href={withPrefix('/static/fitato-icon-57.png')} />
@@ -64,9 +64,9 @@ export default ({ children }) => (
           <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet" />
 
         </Helmet>
-        <noscript>
+        {/* <noscript>
           {`<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6HNZB" height="0" width="0" style="display:none;visibility:hidden"></iframe>`}
-        </noscript>
+        </noscript> */}
         {/* <CountdownTimer /> */}
         <Header />
         <div className="main-header-placeholder" />
