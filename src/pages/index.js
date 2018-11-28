@@ -53,7 +53,7 @@ class OffersPage extends React.Component {
       <Layout>
         <div className="offers-page">
           <Helmet
-            title="Month-End Bonanza | Fitato"
+            title="Month-End Offer | Fitato"
           >
           </Helmet>
             
@@ -93,15 +93,24 @@ class OffersPage extends React.Component {
                 <div className="offers-page-intro__items">
                   <p style={{fontSize: '3em', fontWeight: '700', color: '#EB1F2E'}}>₹5,499</p>
                   <h3 style={{margin: '0 0 10px 0'}}>FITATO QUATERLY (3 Months)</h3>
-                  <p style={{fontSize: '20px', lineHeight: '1.6em'}}>Purchase the Fitato Quarterly pass and get unlimited access to every Fitato partner facility for 3 months!</p>
+                  <p style={{fontSize: '20px', lineHeight: '1.6em'}}>Get unlimited access to every Fitato partner facility for 3 months!</p>
                   <p style={{margin: '0px 0 40px 0', fontSize: '35px'}}>+</p>
                   <p style={{fontSize: '2em', padding: '0px 0 10px 0'}}><strike>&#8377;2,199</strike></p>
                   <p style={{fontSize: '4em', fontWeight: '700', color: '#EB1F2E'}}>FREE</p>
                   <h3 style={{margin: '0 0 10px 0', color: 'rgba(0,0,0,0.8)'}}>FITATO MONTHLY (1 Month)</h3>
-                  <p style={{fontSize: '20px', lineHeight: '1.6em'}}>Get unlimited access to all facilities for one month absolutely free!</p>
-                  <a href="https://imjo.in/fyUM4z" target="_blank" rel="noopener noreferrer" className="button button-fluid" style={{maxWidth: '400px', fontSize: '20px', marginTop: '10px'}}>Buy Now</a>
-                  <div style={{paddingTop: '40px'}}>
-                    <small>* Offer valid for first-time users and till 30<sup>th</sup> November 2018 only.</small>
+                  <p style={{fontSize: '20px', lineHeight: '1.6em', paddingBottom: '20px'}}>Get unlimited access to all facilities for one month absolutely free!</p>
+                  <p><span className="offer-highlight">Use Coupon Code: <strong>GETFIT</strong></span></p>
+                  <p style={{fontSize: '1.2em', lineHeight: '2em', paddingTop: '0px'}}>on your Fitato App<br /></p>
+                  <p style={{fontSize: '1.3em', fontWeight: '700'}}>OR</p>
+                  <a href="https://imjo.in/fyUM4z" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="button button-fluid" 
+                    style={{maxWidth: '400px', fontSize: '20px', marginTop: '0px'}}
+                  >Buy Here</a>
+                  <p style={{paddingTop: '40px'}}>As soon as you make your payment, our fitness concierge will get in touch with you and take you through the rest of the process.</p>
+                  <div>
+                    <small>* Offer valid till 30<sup>th</sup> November 2018 only.</small>
                     <br/>
                     <small>Not valid on payment made through wallet.</small>
                   </div>

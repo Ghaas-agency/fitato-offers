@@ -195,10 +195,10 @@ p, small {
   padding: 0 30px;
 }
 
-.offers-page-intro__item-right {
-  /* flex: 2; */
-  /* text-align: left; */
-}
+/* .offers-page-intro__item-right {
+  flex: 2;
+  text-align: left;
+} */
 
 .offers-page-intro__passes-left {
   margin: 30px 15%;
