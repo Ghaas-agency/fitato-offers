@@ -5,56 +5,21 @@ import DownloadSwipe from '../partials/DownloadSwipe'
 import Layout from '../components/index'
 import '../css/offer.css'
 
-/* const displayBlock = {
-  display: 'block'
-}
-
-const displayNone = {
-  display: 'none'
-} */
-
 class OffersPage extends React.Component {
-  state = {
-    modalToggle: false,
-    passesLeft: 246
-  }
-
-  componentDidMount() {
-    const oneHour = 60*60*1000;
-    const current = new Date();
-    const ends = new Date(2018, 8, 30, 23, 59, 59);
-    
-    const hoursLeft = Math.round(Math.abs((current.getTime() - ends.getTime())/oneHour));
-    
-    // Change the number every twelve hours
-    const passesLeftCalc = (hoursLeft / 200) * 500;
-    
-    if(current.getMonth() >= 9) {
-      this.setState({passesLeft: '11'});
-    } else {
-      this.setState({passesLeft: Math.round(passesLeftCalc)});
-    }
-  }
-
-  handleClick = e => {
-    if(e.target.className === 'workplace-modalbg' || e.target.className === 'modal-close') {
-      this.setState({
-        modalToggle: false
-      });
-    } else {
-      this.setState({
-        modalToggle: true
-      });
-    }
-  }
-
   render() {
     return (
       <Layout>
         <div className="offers-page">
           <Helmet
-            title="Month-End Offer | Fitato"
+            title="50% Off on Every Fitato Pass | Fitato Mid-Month Offer"
           >
+            <meta name="description" content="asasas" />
+            <meta itemprop="name" content="50% Off on Every Fitato Pass | Fitato Mid-Month Offer"/>
+            <meta itemprop="description" content="asasas"/>
+            <meta name="twitter:title" content="50% Off on Every Fitato Pass | Fitato Mid-Month Offer"/>
+            <meta name="twitter:description" content="asasas"/>
+            <meta name="og:title" content="50% Off on Every Fitato Pass | Fitato Mid-Month Offer"/>
+            <meta name="og:description" content="asasas"/>
           </Helmet>
             
             <div className="offers-page-hero">
@@ -63,9 +28,9 @@ class OffersPage extends React.Component {
                   {/* <div style={{textAlign: 'center'}}>
                     <img src={withPrefix('/static/fitao-dussehra-landing-page.png')} alt="fitato dussehra offer"/>
                   </div> */}
-                  <h1 style={{lineHeight: '0.9'}}><span style={{fontSize: '2.2em', marginLeft: '-2px', fontWeight: '700', letterSpacing: '10px'}}>FREE</span><br/><span style={{fontSize: '0.9em'}}>Monthly Pass</span></h1>
+                  <h1>Why Wait For The New Year?</h1>
                   <div className="line"></div>
-                  <p>Buy a Quarterly Pass and get a Monthly Pass Free</p>
+                  <p>Your Fitness Resolution Starts Now</p>
                   <img src={withPrefix('/static/Untitled-2.png')} className="banner-mobile" alt="month-end offer" style={{marginTop: '30px'}}/>
                   <p className="move-down-icon-animate">
                     <img src={withPrefix('/static/icons/arrow-down.svg')} width="25" className="down-arrow" alt="down arrow"/>
@@ -87,7 +52,7 @@ class OffersPage extends React.Component {
                 <path d="M0 0 L50 100 L100 0 Z" />
             </svg> */}
 
-            <div className="offers-page-intro">
+            <div className="offers-page-intro" style={{display: 'none'}}>
               <div className="container">
                 <h2>Buy a Quarterly Pass and Get a Monthly Pass Free*</h2>
                 <div className="offers-page-intro__items">
@@ -110,7 +75,7 @@ class OffersPage extends React.Component {
                   >Buy Here</a>
                   <p style={{paddingTop: '40px'}}>As soon as you make your payment, our fitness concierge will get in touch with you and take you through the rest of the process.</p>
                   <div>
-                    <small>* Offer valid till 30<sup>th</sup> November 2018 only.</small>
+                    <small>* Offer valid on 14<sup>th</sup> and 15<sup>th</sup> December 2018 only.</small>
                     <br/>
                     <small>Not valid on payment made through wallet.</small>
                   </div>
@@ -118,13 +83,13 @@ class OffersPage extends React.Component {
               </div>
             </div>
     
-            <div className="offers-page-intro" style={{display: 'none'}}>
+            <div className="offers-page-intro" /* style={{display: 'none'}} */>
               <div className="container">
                 
-                <h2>Month-End Bonanza</h2>
+                <h2>Get Flat 50% Off on All Passes</h2>
                 {/* <p className="offer-title-highlight"></p> */}
-                <h3>Buy a Quarterly Pass and get a Monthly Pass Free*</h3>
-                <p><span className="offer-highlight">Use Coupon Code: <strong>GETFIT</strong></span></p>
+                {/* <h3>Buy a Quarterly Pass and get a Monthly Pass Free*</h3> */}
+                <p><span className="offer-highlight">Use Coupon Code: <strong>FIT50</strong></span></p>
                 <p style={{fontSize: '1.2em', lineHeight: '2em', paddingTop: '0px'}}>on your Fitato App<br /></p>
                 <p style={{fontSize: '1.3em', fontWeight: 'bold'}}>OR</p>
                 <p style={{fontSize: '1.3em', fontWeight: 'bold', marginBottom: '0.5em'}}>Buy Now:</p>
@@ -132,37 +97,22 @@ class OffersPage extends React.Component {
                 <div className="offers-page-plans__items">
                   <div className="offers-page-plans__item">
                     <div className="offers-page-plans__item--title">
-                      <h3>Fitato Quarterly<br /><small className="normal">(3 months)</small></h3>
+                      <h3>Fitato Quaterly<br /><small className="normal">(3 months)</small></h3>
                     </div>
                     <div className="offers-page-plans__item--body">
                       <p>Purchase the Fitato Quarterly pass and get unlimited access to every Fitato partner facility for 3 months!</p>
                       {/* <p className="offers-page-plans__item--price-strike"><strike>&#8377;5,499</strike></p>
-                      <p className="offers-page-plans__item--price">&#8377;4,399</p>
-                      <small>Get Cashback: &#8377;1,320</small> */}
-                      <p className="offers-page-plans__item--price" style={{margin: '40px 0 20px 0'}}>&#8377;5,499</p>
+                      <p className="offers-page-plans__item--price">&#8377;3,119</p> */}
+                      <p className="offers-page-plans__item--price-strike"><strike>&#8377;3,899</strike></p>
+                      {/* <small>Get Cashback: &#8377;936</small> */}
+                      <p className="offers-page-plans__item--price">&#8377;5,499</p>
                       {/* <p className="offers-page-plans__item--get-cb">Get 100% Cashback</p> */}
                     </div>
                     <div className="offers-page-plans__item--cta">
-                      <a href="https://imjo.in/x9Jr6c" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
+                      <a href="https://imjo.in/67wHbA" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
                   </div>
                   <div className="offers-page-plans__item">
-                    <div className="offers-page-plans__item--title">
-                      <h3>Fitato Monthly<br /><small className="normal">(1 month)</small></h3>
-                    </div>
-                    <div className="offers-page-plans__item--body">
-                      <p>Get unlimited access to all facilities for one month absolutely free!</p>
-                      <p className="offers-page-plans__item--price-strike"><strike>&#8377;2,199</strike></p>
-                      {/* <p className="offers-page-plans__item--price">&#8377;1,759</p>
-                      <small>Get Cashback: &#8377;528</small> */}
-                      <p className="offers-page-plans__item--price" style={{margin: '10px 0 20px 0'}}>&#8377;0</p>
-                      {/* <p className="offers-page-plans__item--get-cb">Get 100% Cashback</p> */}
-                    </div>
-                    <div className="offers-page-plans__item--cta">
-                      <span className="button button-fluid" style={{backgroundColor: '#999999'}}>Free</span>
-                    </div>
-                  </div>
-                  {/* <div className="offers-page-plans__item">
                     <div className="offers-page-plans__item--title">
                       <h3>Fitato Bi-Monthly<br /><small className="normal">(2 months)</small></h3>
                     </div>
@@ -170,15 +120,15 @@ class OffersPage extends React.Component {
                       <p>Purchase the Fitato Bi-Monthly pass and get unlimited  access to every Fitato partner facility for 2 months!</p>
                       <p className="offers-page-plans__item--price-strike"><strike>&#8377;3,899</strike></p>
                       <p className="offers-page-plans__item--price">&#8377;3,119</p>
-                      <small>Get Cashback: &#8377;936</small>
-                      <p className="offers-page-plans__item--price" style={{margin: '40px 0 20px 0'}}>&#8377;3,899</p>
-                      <p className="offers-page-plans__item--get-cb">Get 100% Cashback</p>
+                      {/* <small>Get Cashback: &#8377;936</small>
+                      <p className="offers-page-plans__item--price" style={{margin: '40px 0 20px 0'}}>&#8377;3,899</p> */}
+                      {/* <p className="offers-page-plans__item--get-cb">Get 100% Cashback</p> */}
                     </div>
                     <div className="offers-page-plans__item--cta">
                       <a href="https://imjo.in/67wHbA" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
-                  </div> */}
-                  {/* <div className="offers-page-plans__item">
+                  </div>
+                  <div className="offers-page-plans__item">
                     <div className="offers-page-plans__item--title">
                       <h3>Fitato Monthly<br /><small className="normal">(1 month)</small></h3>
                     </div>
@@ -186,14 +136,14 @@ class OffersPage extends React.Component {
                       <p>Purchase the Fitato Monthly pass and get unlimited access to every Fitato partner facility for  1 month!</p>
                       <p className="offers-page-plans__item--price-strike"><strike>&#8377;2,199</strike></p>
                       <p className="offers-page-plans__item--price">&#8377;1,759</p>
-                      <small>Get Cashback: &#8377;528</small>
-                      <p className="offers-page-plans__item--price" style={{margin: '40px 0 20px 0'}}>&#8377;2,199</p>
-                      <p className="offers-page-plans__item--get-cb">Get 100% Cashback</p>
+                      {/* <small>Get Cashback: &#8377;528</small>
+                      <p className="offers-page-plans__item--price" style={{margin: '40px 0 20px 0'}}>&#8377;2,199</p> */}
+                      {/* <p className="offers-page-plans__item--get-cb">Get 100% Cashback</p> */}
                     </div>
                     <div className="offers-page-plans__item--cta">
                       <a href="https://imjo.in/Z2fERu" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
                     </div>
-                  </div> */}
+                  </div>
                 </div>
                 <small>* Offer valid for first-time users and till 30<sup>th</sup> November 2018 only.</small>
                 <br/>
@@ -222,27 +172,6 @@ class OffersPage extends React.Component {
 
         </div>
         <DownloadSwipe />
-
-        {/* <div className="workplace-modalbg" 
-          style={(this.state.modalToggle) ? displayBlock : displayNone} onClick={this.handleClick}>
-          <div className="workplace-modal">
-            <div className="workplace-modal__title">
-              <h3>Learn More About the Exclusive Offer</h3>
-            </div>
-            <span className="modal-close" onClick={this.handleClick}>X</span>
-            <div className="workplace-modal__form">
-              <small>Please fill out this form, and we&apos;ll get in touch shortly.</small>
-              <form action="https://formspree.io/pooja.ahuja@fitato.fit" method="POST" className="contact-form">
-                <div><input type="text" name="name" placeholder="Your Name" required /></div>
-                <div><input type="tel" name="phone" placeholder="Your Phone Number" required /></div>
-                <div><input type="email" name="_replyto" placeholder="Your Email" required /></div>
-                <input type="hidden" name="_subject" value="offers form submission" />
-                <input type="hidden" name="_cc" value="murada@fitato.fit" />
-                <input type="submit" value="Submit" />
-              </form>
-            </div>
-          </div>
-        </div> */}
 
       </Layout>
     )

@@ -308,14 +308,11 @@ p, small {
   min-width: 300px;
   max-width: 350px;
   border-radius: 5px;
-  border-radius: 0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   border: 1px solid #dddddd;
-  margin: 0 30px;
+  margin: 0 10px;
   position: relative;
 }
-
+/* 
 .offers-page-plans__item::after {
   position: absolute;
   top: -35px;
@@ -341,7 +338,7 @@ p, small {
   content: 'Get';
   background-color: #999999;
   border: 3px solid #999999;
-}
+} */
 
 .offers-page-plans__item--title {
   padding: 30px;

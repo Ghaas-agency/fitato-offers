@@ -23,6 +23,10 @@ export default ({ children }) => (
     render={data => (
       <>
         <Helmet defaultTitle={data.site.siteMetadata.title}>
+
+          <script>
+            {`var currentDate = new Date();var expiryDate = new Date(2018, 11, 16);if(expiryDate < currentDate) {window.location.replace("https://www.fitato.fit/");}`}
+          </script>
           
           <meta charset="utf-8" />
           <meta name="description" content="A fitness membership tailored to you. The best facilities, exciting events, and the country’s fastest-growing fitness community. Come, be a part of the revolution!"/>
@@ -53,7 +57,7 @@ export default ({ children }) => (
           <meta name="al:android:package" content="fit.fitato.health"/>
           <meta name="al:android:app_name" content="Fitato: One Pass to Fitness"/>
 
-          <script type="text/javascript">
+          <script>
             {`!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.async=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-M6HNZB",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer");`}
           </script>
 
