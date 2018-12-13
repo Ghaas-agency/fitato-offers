@@ -25,7 +25,7 @@ export default ({ children }) => (
         <Helmet defaultTitle={data.site.siteMetadata.title}>
 
           <script>
-            {`var currentDate = new Date();var expiryDate = new Date(2018, 11, 16);if(expiryDate < currentDate) {window.location.replace("https://www.fitato.fit/");}`}
+            {`var currentDate = new Date();var expiryDate = new Date(2018, 11, 15);if(expiryDate < currentDate) {window.location.replace("https://www.fitato.fit/");}`}
           </script>
           
           <meta charset="utf-8" />
