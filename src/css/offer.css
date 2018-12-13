@@ -297,9 +297,19 @@ small {
     flex-direction: column;
   }
 
+  .offers-page-steps {
+    padding-bottom: 10px;
+  }
+
   .offers-page-steps__left,
   .offers-page-steps__right {
     margin-bottom: 50px;
+  }
+
+  .offers-page-steps__left,
+  .offers-page-steps__right {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .offers-page-steps__left::after {

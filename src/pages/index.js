@@ -16,13 +16,13 @@ class OffersPage extends React.Component {
               "cssText": `.offers-page-hero {background-image: url('${withPrefix('/static/Untitled-1.jpg')}');}.offers-page-steps__left::after{background-image: url('${withPrefix('/static/icons/arrow-down.svg')}');}`
             }]}
           >
-            <meta name="description" content="asasas" />
+            <meta name="description" content="Why wait for the New Year? Your fitness resolution starts now. Get 50% off on all Fitato passes." />
             <meta itemprop="name" content="50% Off on Every Fitato Pass | Fitato Mid-Month Offer"/>
-            <meta itemprop="description" content="asasas"/>
+            <meta itemprop="description" content="Why wait for the New Year? Your fitness resolution starts now. Get 50% off on all Fitato passes."/>
             <meta name="twitter:title" content="50% Off on Every Fitato Pass | Fitato Mid-Month Offer"/>
-            <meta name="twitter:description" content="asasas"/>
+            <meta name="twitter:description" content="Why wait for the New Year? Your fitness resolution starts now. Get 50% off on all Fitato passes."/>
             <meta name="og:title" content="50% Off on Every Fitato Pass | Fitato Mid-Month Offer"/>
-            <meta name="og:description" content="asasas"/>
+            <meta name="og:description" content="Why wait for the New Year? Your fitness resolution starts now. Get 50% off on all Fitato passes."/>
           </Helmet>
             
             <div className="offers-page-hero">
@@ -145,7 +145,7 @@ class OffersPage extends React.Component {
                 </div>
                 <small>* Offer valid for first-time users and on 14<sup>th</sup> and 15<sup>th</sup> December 2018 only.</small>
                 <br/>
-                <small>Not valid on payment made through wallet.</small>
+                <small>* Not valid on payment made through Fitato wallet.</small>
 
                 <div style={{marginTop: '50px'}}>
                   <h4 style={{marginBottom: '5px'}}>Have questions? Let us help.</h4>
