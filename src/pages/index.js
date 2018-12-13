@@ -12,6 +12,9 @@ class OffersPage extends React.Component {
         <div className="offers-page">
           <Helmet
             title="50% Off on Every Fitato Pass | Fitato Mid-Month Offer"
+            style={[{
+              "cssText": `.offers-page-hero {background-image: url('${withPrefix('/static/Untitled-1.jpg')}');}.offers-page-steps__left::after{background-image: url('${withPrefix('/static/icons/arrow-down.svg')}');}`
+            }]}
           >
             <meta name="description" content="asasas" />
             <meta itemprop="name" content="50% Off on Every Fitato Pass | Fitato Mid-Month Offer"/>
@@ -42,9 +45,9 @@ class OffersPage extends React.Component {
               <img src={withPrefix('/static/bottom-left.png')} alt="" className="offers-page-hero--prop__bottom-left"/> */}
             </div>
 
-            <style dangerouslySetInnerHTML={{
-              __html: `.offers-page-hero {background-image: url('${withPrefix('/static/Untitled-1.jpg')}');}`
-            }}/>
+            {/* <style dangerouslySetInnerHTML={{
+              __html: `.offers-page-hero {background-image: url('${withPrefix('/static/Untitled-1.jpg')}');}.offers-page-steps__left::after{background-image: url('${withPrefix('/static/icons/arrow-down.svg')}');}`
+            }}/> */}
 
             {/* <img src={withPrefix('/static/tri.svg')} className="tri-svg" alt="fitato dussehra offer"/> */}
 
@@ -54,8 +57,25 @@ class OffersPage extends React.Component {
 
             <div className="offers-page-steps">
               <div className="container">
-              
-                <div className="offers-page-steps__items">
+                <div className="offers-page-steps__left">
+                  <p><strong>BUY</strong></p>
+                  <div className="offers-page-steps__left--item">
+                    <p>Any Fitato Membership</p>
+                  </div>
+                </div>
+                <div className="offers-page-steps__right">
+                  <p><strong>GET</strong></p>
+                  <div className="offers-page-steps__left--item">
+                    <p>20% Off + 30% Cashback</p>
+                  </div>
+                  {/* <div className="offers-page-steps__right--item offers-page-steps__right--item-plus">
+                    <p>20% Off</p>
+                  </div>
+                  <div className="offers-page-steps__right--item">
+                    <p>30% Cashback</p>
+                  </div> */}
+                </div>
+                {/* <div className="offers-page-steps__items">
                   <div className="offers-page-steps__item">
                     <p>Buy Any Fitato Membership</p>
                   </div>
@@ -65,14 +85,14 @@ class OffersPage extends React.Component {
                   <div className="offers-page-steps__item">
                     <p>Get 30% Cashback</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
     
             <div className="offers-page-intro" /* style={{display: 'none'}} */>
               <div className="container">
                 
-                <h2>Get Flat 50% Off on All Passes</h2>
+                {/* <h2>Get Flat 50% Off on All Passes</h2> */}
                 {/* <p className="offer-title-highlight">Highlight</p> */}
                 <p className="offers-page-intro--use-coupon">Use Coupon Code<span className="offer-highlight">FIT50</span><span className="offer-highlight--clear">on your Fitato App</span></p>
                 <p style={{fontSize: '1.3em', fontWeight: 'bold', paddingTop: '10px'}}>OR</p>
