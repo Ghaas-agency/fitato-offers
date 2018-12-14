@@ -107,7 +107,7 @@ class OffersPage extends React.Component {
                       <p>Purchase the Fitato Quarterly pass and get unlimited access to every Fitato partner facility for 3 months!</p>
                       <p className="offers-page-plans__item--price-strike"><strike>&#8377;5,499</strike></p>
                       <p className="offers-page-plans__item--price">&#8377;4,399</p>
-                      <p className="offers-page-plans__item--get-cb">Get Cashback: &#8377;1,649</p>
+                      <p className="offers-page-plans__item--get-cb">Get Cashback: &#8377;1,319</p>
                       
                     </div>
                     <div className="offers-page-plans__item--cta">
@@ -122,7 +122,7 @@ class OffersPage extends React.Component {
                       <p>Purchase the Fitato Bi-Monthly pass and get unlimited  access to every Fitato partner facility for 2 months!</p>
                       <p className="offers-page-plans__item--price-strike"><strike>&#8377;3,899</strike></p>
                       <p className="offers-page-plans__item--price">&#8377;3,119</p>
-                      <p className="offers-page-plans__item--get-cb">Get Cashback: &#8377;1,169</p>
+                      <p className="offers-page-plans__item--get-cb">Get Cashback: &#8377;935</p>
                     </div>
                     <div className="offers-page-plans__item--cta">
                       <a href="https://imjo.in/YtCRvk" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
@@ -136,7 +136,7 @@ class OffersPage extends React.Component {
                       <p>Purchase the Fitato Monthly pass and get unlimited access to every Fitato partner facility for  1 month!</p>
                       <p className="offers-page-plans__item--price-strike"><strike>&#8377;2,199</strike></p>
                       <p className="offers-page-plans__item--price">&#8377;1,759</p>
-                      <p className="offers-page-plans__item--get-cb">Get Cashback: &#8377;659</p>
+                      <p className="offers-page-plans__item--get-cb">Get Cashback: &#8377;527</p>
                     </div>
                     <div className="offers-page-plans__item--cta">
                       <a href="https://imjo.in/qEYkVv" target="_blank" rel="noopener noreferrer" className="button button-fluid">Buy Now</a>
