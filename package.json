@@ -1,0 +1,23 @@
+{
+  "name": "fitato-offers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --output-style compressed -w src/assets/scss/style.scss src/assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghaas-agency/fitato-offers.git"
+  },
+  "keywords": [],
+  "author": "Akshay Dhiman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ghaas-agency/fitato-offers/issues"
+  },
+  "homepage": "https://github.com/Ghaas-agency/fitato-offers#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
