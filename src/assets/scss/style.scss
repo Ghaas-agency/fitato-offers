@@ -759,7 +759,7 @@ svg#bigTriangleColor {
   }
 
   &-intro {
-    padding-top: 40px;
+    padding-top: 50px;
 
     h2 {
       margin-bottom: 30px;
@@ -767,6 +767,14 @@ svg#bigTriangleColor {
 
     &--use-coupon {
       font-size: 24px;
+
+      @media only screen and (max-width: 767px) {
+        font-size: 20px;
+
+        .offer-highlight {
+          font-size: 22px;
+        }
+      }
     }
 
     &--later {
@@ -778,5 +786,54 @@ svg#bigTriangleColor {
   &-plans__item--price {
     margin-top: 30px;
   }
+}
+
+.famfit {
+ .offers-page {
+    &-hero {
+      background-image: url('../img/fitato-offer-bg-famfit.jpg');
+      
+      @media only screen and (max-width: 767px) {
+        background-image: unset;
+      }
+    }
+
+    &-intro {
+      @media only screen and (max-width: 767px) {
+        h2 {
+          margin-bottom: 15px;
+        }
+      }
+      &__row-plans {
+        padding: 20px 20%;
+
+        .button {
+          max-width: 250px;
+          font-size: 20px;
+        }
+
+        h3 {
+          margin-bottom: 10px;
+        }
+
+        @media only screen and (max-width: 767px) {
+          padding: 20px 10%;
+        }
+        
+        @media only screen and (max-width: 480px) {
+          padding: 20px 5%;
+        }
+      }
+    }
+  }
+}
   
+
+.offer-title-highlight {
+  text-transform: none;
+  line-height: 1.3em;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 20px;
+  }
 }
