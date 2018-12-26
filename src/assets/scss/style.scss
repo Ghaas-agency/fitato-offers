@@ -541,6 +541,11 @@
       &--cta {
         padding: 30px;
         border-top: 1px solid #ffdddd;
+
+        a {
+          font-size: 18px;
+          font-weight: 700;
+        }
       }
 
       &--price {
@@ -581,6 +586,10 @@ p.move-down-icon-animate {
   font-style: normal;
   -webkit-filter: opacity(0.75);
   filter: opacity(0.75);
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .down-arrow {
@@ -718,10 +727,39 @@ svg#bigTriangleColor {
     h1 {
       font-size: 48px;
     }
+
+    @media only screen and (max-width: 767px) {
+      background-image: unset;
+      padding: 50px 3%;
+      padding-top: 2px;
+      text-align: center;
+
+      img {
+        max-width: 300px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+      }
+
+      &__wrapper {
+        width: 100%;
+      }
+      
+      p, h1 {
+        padding-right: 0;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 28px;
+      }
+    }
   }
 
   &-intro {
-    padding-top: 75px;
+    padding-top: 40px;
 
     h2 {
       margin-bottom: 30px;
@@ -730,6 +768,15 @@ svg#bigTriangleColor {
     &--use-coupon {
       font-size: 24px;
     }
+
+    &--later {
+      font-size: 20px;
+      margin-top: 40px;
+    }
+  }
+
+  &-plans__item--price {
+    margin-top: 30px;
   }
   
 }
