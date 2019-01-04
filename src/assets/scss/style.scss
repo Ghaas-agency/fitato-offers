@@ -841,3 +841,42 @@ svg#bigTriangleColor {
     font-size: 20px;
   }
 }
+
+.resolution {
+  .hero {
+    padding: 30px 0;
+    text-align: center;
+    
+    .logo {
+      max-width: 130px;
+    }
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__left,
+    &__right {
+      flex: 1;
+      padding: 30px 30px;
+    }
+
+    &__left {
+      img {
+        max-width: 400px;
+        max-height: 250px;
+      }
+    }
+
+    &__right {
+      text-align: left;
+    }
+  }
+
+  .partial-download-swipe {
+    padding-top: 0;
+  }
+}
