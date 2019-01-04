@@ -831,7 +831,6 @@ svg#bigTriangleColor {
     }
   }
 }
-  
 
 .offer-title-highlight {
   text-transform: none;
@@ -843,12 +842,24 @@ svg#bigTriangleColor {
 }
 
 .resolution {
+  p {
+    line-height: 1.5em;
+    font-weight: 300;
+    font-size: 18px;
+  }
+
   .hero {
     padding: 30px 0;
     text-align: center;
     
     .logo {
       max-width: 130px;
+      margin-bottom: 50px;
+
+      @media only screen and (max-width: 767px) {
+        margin-bottom: 20px;
+        max-width: 100px;
+      }      
     }
 
     &__items {
@@ -861,13 +872,21 @@ svg#bigTriangleColor {
     &__left,
     &__right {
       flex: 1;
-      padding: 30px 30px;
+      padding: 10px 30px;
+      min-width: 300px;
     }
 
     &__left {
       img {
         max-width: 400px;
         max-height: 250px;
+        margin: 0;
+        width: 100%;
+        object-fit: contain;
+
+        @media only screen and (max-width: 767px) {
+          max-height: 160px;
+        } 
       }
     }
 
@@ -878,5 +897,9 @@ svg#bigTriangleColor {
 
   .partial-download-swipe {
     padding-top: 0;
+  }
+
+  footer {
+    margin-top: 50px;
   }
 }
