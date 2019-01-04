@@ -903,6 +903,12 @@ svg#bigTriangleColor {
   footer {
     margin-top: 50px;
   }
+
+  .highlight {
+    font-size: 19px;
+    padding: 0 5px 2px 5px;
+    box-shadow: 0px -12px 0px 0 #eaff00 inset;
+  }
 }
 
 .resolution {
@@ -916,7 +922,7 @@ svg#bigTriangleColor {
     }
 
     .center-text {
-      max-width: 55%;
+      max-width: 60%;
       margin-left: auto;
       margin-right: auto;
     }
