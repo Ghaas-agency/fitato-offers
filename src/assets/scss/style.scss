@@ -31,11 +31,10 @@
     /* margin-top: -100px; */
     padding-top: 75px;
     padding-bottom: 75px;
-    background-image: url('../img/24-hour-flash-sale.png');
+    background-image: url('../img/fitato-holi-offer.jpg');
     background-position: 15% center;
     -webkit-background-size: 450px;
     -moz-background-size: 450px;
-    -o-background-size: 450px;
     background-size: 450px;
     background-repeat: no-repeat;
     /* color: #ffffff; */
@@ -44,7 +43,7 @@
     min-height: 550px;
     margin-bottom: -1px;
     text-align: center;
-  
+
     /* &--prop__top-right {
       position: absolute;
       top: 0;
@@ -60,19 +59,19 @@
       width: 12%;
       margin: 0;
     } */
-  
+
     &__wrapper {
       width: 55%;
       margin-left: auto;
     }
-  
+
     p {
       font-size: 19px;
       line-height: 1.3em;
       margin-bottom: 0;
       margin-top: 0;
     }
-  
+
     h1 {
       margin-top: 50px;
       margin-bottom: 30px;
@@ -90,13 +89,13 @@
     /* @media (min-width: 1440px) {
       min-height: 750px;
     } */
-    
+
     @media (max-width: 979px) {
       h1 {
         font-size: 3em;
       }
     }
-    
+
     @media (max-width: 767px) {
       min-height: 100vh;
       padding-top: 30px;
@@ -105,40 +104,39 @@
       padding-right: 5%;
       -webkit-background-size: 350px;
       -moz-background-size: 350px;
-      -o-background-size: 350px;
       background-size: 350px;
       background-position: top;
-    
+
       &__wrapper {
         width: 100%;
       }
-    
+
       h1 {
         font-size: 38px;
         margin-top: 350px;
       }
-    
+
       &--prop__top-right {
         display: none;
       }
-    
+
       &--prop__bottom-left {
         display: none;
       }
-    
+
       p {
         font-size: 24px;
         line-height: 1.4em;
       }
     }
-    
+
     @media (max-width: 380px) {
       h1 {
         font-size: 34px;
       }
     }
   }
-  
+
   // &-steps {
   //   padding-top: 20px;
   //   padding-bottom: 0px;
@@ -236,7 +234,7 @@
   //       -ms-flex-direction: column;
   //       flex-direction: column;
   //     }
-      
+
   //     &__left,
   //     &__right {
   //       margin-bottom: 50px;
@@ -244,7 +242,7 @@
   //       margin-right: 10px;
   //       max-width: 95%;
   //     }
-    
+
   //     &__left::after {
   //       top: unset;
   //       right: unset;
@@ -258,7 +256,7 @@
   //     }
   //   }
   // }
-  
+
   &-intro {
     padding: 50px 10%;
     padding-top: 0px;
@@ -366,7 +364,7 @@
       /* padding-top: 20px; */
       margin-top: 0px;
       text-align: center;
-    
+
       &--clear {
         display: block;
       }
@@ -374,7 +372,7 @@
 
     @media (max-width: 480px) {
       text-align: center;
-    
+
       // &__passes-left {
       //   margin: 30px 2.5%;
       //   border: 1px solid #dddddd;
@@ -391,7 +389,6 @@
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-position: center;
     background-color: $light-grey;
@@ -436,7 +433,7 @@
   //     padding: 100px 5%;
   //     background-color: $light-grey;
   //   }
-    
+
   //   @media (max-width: 480px) {
   //     padding: 100px 0%;
   //     background-color: $light-grey;
@@ -482,7 +479,7 @@
       border: 1px solid #dddddd;
       margin: 0 10px;
       position: relative;
-      
+
       /* &::after {
         position: absolute;
         top: -35px;
@@ -514,7 +511,7 @@
         padding: 30px;
         padding-bottom: 20px;
         border-bottom: 1px solid #dddddd;
-        
+
         h3 {
           margin-bottom: 0;
           line-height: 1.25em;
@@ -557,7 +554,7 @@
         padding-top: 0px;
       }
 
-      @media (max-width: 767px) {  
+      @media (max-width: 767px) {
         margin-top: -1px;
       }
 
@@ -571,102 +568,125 @@
 .fit-55 {
   .offers-page {
     &-hero {
-      background-image: url('../img/offer-bg.jpg');
-      background-size: 50%;
+      background-image: url('../img/fitato-holi-offer.jpg');
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: right top;
       text-align: left;
+      padding-top: 100px;
+      padding-bottom: 0;
+      overflow: auto;
 
-      @media (max-width: 767px) {  
-        background-position: right bottom;
-        background-size: 43%;
-        padding-bottom: 40%;
-        position: relative;
-        overflow: hidden;
+      @media (max-width: 1200px) {
+        background-position: right 30%;
+        background-size: 50%;
+      }
 
-        &::before {
-          content: '';
-          background-color: $dark-grey;
-          position: absolute;
-          bottom: 0;
-          left: -180px;
-          right: -100px;
-          height: 35%;
-          width: 100%;
-          z-index: -1;
-
-          background-color: #ffffff;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          border-width: 0 0 600px 1000px;
-          border-color: transparent transparent $dark-grey transparent;
-        }
+      @media (max-width: 979px) {
+        background-position: right 30%;
+        background-size: 50%;
+        padding-top: 75px;
       }
 
       @media (max-width: 480px) {
+        background-position: 450% 65%;
+        background-size: 90%;
+        padding-top: 50px;
+        position: relative;
         padding-bottom: 35%;
-        min-height: 650px;
+        min-height: 400px;
+      }
+
+      @media (max-width: 380px) {
+        background-position: 450% 65%;
+        background-size: 90%;
+        padding-bottom: 35%;
       }
 
       &__wrapper {
         margin: 0;
-        width: 50%;
+        width: 60%;
         padding-right: 20px;
+        padding-left: 5%;
 
-        @media (max-width: 767px) {  
+        @media (max-width: 979px) {
+          padding-left: 2%;
+        }
+
+        @media (max-width: 767px) {
           width: 100%;
           padding-right: 0px;
+          padding-left: 0px;
         }
       }
 
       h1 {
-        font-size: 2.25em;
+        font-size: 3em;
         font-style: italic;
-        color: $dark-grey;
+        color: $red;
         font-weight: 900;
+        margin-bottom: 20px;
+        margin-top: 0;
+        line-height: 1.1;
+        
+        @media (max-width: 979px) {
+          font-size: 2.5em;
+        }
 
-        @media (max-width: 767px) {  
+        @media (max-width: 767px) {
           margin-top: 10px;
+          font-size: 2em;
+        }
+
+        @media (max-width: 480px) {
           font-size: 1.7em;
         }
       }
-      
+
       h2 {
-        font-size: 3.75em;
-        color: $red;
+        font-size: 1.7em;
         font-weight: 900;
         line-height: 1;
+        color: $dark-grey;
+        margin-bottom: 5px;
+        font-style: italic;
 
-        @media (max-width: 767px) {  
-          font-size: 2.5em;
+        @media (max-width: 767px) {
+          font-size: 1.4em;
         }
-        
+
         @media (max-width: 380px) {
-          font-size: 2.2em;
+          font-size: 1.2em;
         }
       }
 
       p.focus {
         font-size: 1.5em;
         color: $dark-grey;
-        margin-bottom: 30px;
-        font-weight: 700;
+        margin-bottom: 50px;
+        font-weight: 400;
+        font-style: italic;
+        margin-top: 5px;
 
-        @media (max-width: 767px) {  
+        @media (max-width: 767px) {
           font-size: 1.2em;
         }
       }
 
       p {
-        @media (max-width: 767px) {  
+        @media (max-width: 767px) {
           font-size: 1.3em;
         }
       }
     }
 
     &-intro {
-      padding-top: 50px;
+      padding-top: 0px;
+      margin-top: -50px;
+      z-index: 99;
+      position: relative;
     }
   }
 }
@@ -807,7 +827,7 @@ p.move-down-icon-animate {
 // }
 
 p.offers-page-hero--code {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 700;
   margin: 25px 0;
 
