@@ -22,6 +22,10 @@
   color: #fede0d;
 }
 
+.white {
+  color: #ffffff;
+}
+
 .align-center {
   text-align: center;
 }
@@ -112,4 +116,10 @@ input[type="submit"]:focus {
   font-size: 120%;
   max-width: 300px;
   margin: 0px auto 30px auto;
+}
+
+.d-none-sm {
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
 }

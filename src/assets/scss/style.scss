@@ -568,18 +568,19 @@
 .fit-55 {
   .offers-page {
     &-hero {
-      background-image: url('../img/fitato-holi-offer-full.jpg');
-      -webkit-background-size: contain;
-      -moz-background-size: contain;
-      background-size: contain;
+      background-image: url('../img/month-end-madenss.jpg');
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
       background-repeat: no-repeat;
-      background-position: right top;
+      background-position: center;
       text-align: left;
       padding-top: 100px;
       padding-bottom: 0;
       overflow: auto;
+      min-height: 100vh;
       
-      @media (max-width: 1200px) {
+      /* @media (max-width: 1200px) {
         background-position: right 30%;
         -webkit-background-size: 50% 50%;
         -moz-background-size: 50%;
@@ -592,10 +593,16 @@
         -moz-background-size: 50%;
         background-size: 50%;
         padding-top: 75px;
+      } */
+
+      @media only screen and (max-width: 767px) {
+        background-image: url('/assets/img/month-end-madenss-mobile.jpg');
+        background-color: #E61B21;
+        background-position: top;
+        background-size: contain;
       }
       
-      @media (max-width: 480px) {
-        background-image: url('../img/fitato-holi-offer-mobile.jpg');
+      /* @media (max-width: 480px) {
         background-position: 450% 65%;
         -webkit-background-size: 90% 90%;
         -moz-background-size: 90%;
@@ -612,22 +619,31 @@
         -moz-background-size: 90%;
         background-size: 90%;
         padding-bottom: 35%;
-      }
+      } */
 
       &__wrapper {
         margin: 0;
-        width: 60%;
+        width: 35%;
+        margin-left: auto;
         padding-right: 20px;
         padding-left: 5%;
+        margin-top: 15vh;
 
-        @media (max-width: 979px) {
+        /* @media (max-width: 979px) {
           padding-left: 2%;
-        }
+        } */
 
         @media (max-width: 767px) {
           width: 100%;
           padding-right: 0px;
           padding-left: 0px;
+          margin-top: 450px;
+          margin-top: 55vw;
+          padding-bottom: 5vw;
+        }
+
+        @media (max-width: 480px) {
+          padding-bottom: 0;
         }
       }
 
@@ -673,10 +689,11 @@
 
       p.focus {
         font-size: 1.5em;
-        color: $dark-grey;
+        font-size: 2em;
+        color: #ffffff;
         margin-bottom: 50px;
+        margin-bottom: 30px;
         font-weight: 400;
-        font-style: italic;
         margin-top: 5px;
 
         @media (max-width: 767px) {
@@ -692,8 +709,8 @@
     }
 
     &-intro {
-      padding-top: 0px;
-      margin-top: -50px;
+      padding-top: 50px;
+      // margin-top: -50px;
       z-index: 99;
       position: relative;
     }
@@ -843,7 +860,8 @@ p.offers-page-hero--code {
   span {
     padding: 15px 20px;
     border: 2px dashed #4b4b4b;
-    color: $red;
+    border-color: #ffffff;
+    color: $yellow;
   }
 }
 
