@@ -600,6 +600,7 @@
         background-color: #E61B21;
         background-position: top;
         background-size: contain;
+        min-height: 600px;
       }
       
       /* @media (max-width: 480px) {
@@ -611,19 +612,15 @@
         position: relative;
         padding-bottom: 35%;
         min-height: 400px;
-      }
+      } */
 
       @media (max-width: 380px) {
-        background-position: 450% 65%;
-        -webkit-background-size: 90% 90%;
-        -moz-background-size: 90%;
-        background-size: 90%;
-        padding-bottom: 35%;
-      } */
+        min-height: 550px;
+      }
 
       &__wrapper {
         margin: 0;
-        width: 35%;
+        width: 45%;
         margin-left: auto;
         padding-right: 20px;
         padding-left: 5%;
@@ -689,7 +686,7 @@
 
       p.focus {
         font-size: 1.5em;
-        font-size: 2em;
+        font-size: 2.5em;
         color: #ffffff;
         margin-bottom: 50px;
         margin-bottom: 30px;
