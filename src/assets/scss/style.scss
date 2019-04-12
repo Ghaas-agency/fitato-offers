@@ -568,7 +568,7 @@
 .fit-55 {
   .offers-page {
     &-hero {
-      background-image: url('../img/month-end-madenss.jpg');
+      background-image: url('../img/start-fitness-journey.jpg');
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
@@ -585,22 +585,24 @@
         -webkit-background-size: 50% 50%;
         -moz-background-size: 50%;
         background-size: 50%;
-      }
-
-      @media (max-width: 979px) {
-        background-position: right 30%;
-        -webkit-background-size: 50% 50%;
-        -moz-background-size: 50%;
-        background-size: 50%;
-        padding-top: 75px;
       } */
 
-      @media only screen and (max-width: 767px) {
-        background-image: url('/assets/img/month-end-madenss-mobile.jpg');
-        background-color: #E61B21;
-        background-position: top;
+      @media (max-width: 979px) {
+        min-height: 550px;
+        -webkit-background-size: contain;
+        -moz-background-size: contain;
         background-size: contain;
+        background-position: top;
+        padding-top: 60px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        background-color: #E61B21;
+        background-position: 10% top;
+        background-size: 150%;
         min-height: 600px;
+        padding-bottom: 50px;
+        padding-top: 100px;
       }
       
       /* @media (max-width: 480px) {
@@ -620,23 +622,23 @@
 
       &__wrapper {
         margin: 0;
-        width: 45%;
+        width: 35%;
         margin-left: auto;
         padding-right: 20px;
         padding-left: 5%;
-        margin-top: 15vh;
+        margin-top: 20vh;
 
-        /* @media (max-width: 979px) {
-          padding-left: 2%;
-        } */
+        @media (max-width: 979px) {
+          margin-top: 0;
+        }
 
         @media (max-width: 767px) {
           width: 100%;
           padding-right: 0px;
           padding-left: 0px;
           margin-top: 450px;
-          margin-top: 55vw;
-          padding-bottom: 5vw;
+          margin-top: 65vw;
+          padding-bottom: 10vw;
         }
 
         @media (max-width: 480px) {
@@ -686,7 +688,7 @@
 
       p.focus {
         font-size: 1.5em;
-        font-size: 2.5em;
+        // font-size: 2.5em;
         color: #ffffff;
         margin-bottom: 50px;
         margin-bottom: 15px;
@@ -852,6 +854,7 @@ p.move-down-icon-animate {
 
 p.offers-page-hero--code {
   font-size: 2.5em;
+  font-size: 1.75em;
   font-weight: 700;
   margin: 25px 0;
 
