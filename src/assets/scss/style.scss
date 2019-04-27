@@ -556,6 +556,7 @@
 
       @media (max-width: 767px) {
         margin-top: -1px;
+        margin-bottom: 20px;
       }
 
       @media (max-width: 480px) {
@@ -568,12 +569,12 @@
 .fit-55 {
   .offers-page {
     &-hero {
-      background-image: url('../img/start-fitness-journey.jpg');
+      background-image: url('../img/game-of-workouts-fitato.jpg');
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center;
+      background-position: bottom;
       text-align: left;
       padding-top: 100px;
       padding-bottom: 0;
@@ -597,12 +598,16 @@
       }
 
       @media only screen and (max-width: 767px) {
-        background-color: #E61B21;
-        background-position: 10% top;
-        background-size: 150%;
+        background-color: #ffffff;
+        background-position: left -35%;
+        background-size: 180%;
         min-height: 600px;
-        padding-bottom: 50px;
+        padding-bottom: 0px;
         padding-top: 100px;
+
+        * {
+          color: $dark-grey !important;
+        }
       }
       
       /* @media (max-width: 480px) {
@@ -622,11 +627,12 @@
 
       &__wrapper {
         margin: 0;
-        width: 35%;
+        width: 50%;
         margin-left: auto;
         padding-right: 20px;
         padding-left: 5%;
-        margin-top: 20vh;
+        margin-top: 10vh;
+        text-align: center;
 
         @media (max-width: 979px) {
           margin-top: 0;
@@ -637,8 +643,8 @@
           padding-right: 0px;
           padding-left: 0px;
           margin-top: 450px;
-          margin-top: 65vw;
-          padding-bottom: 10vw;
+          margin-top: 75vw;
+          padding-bottom: 0vw;
         }
 
         @media (max-width: 480px) {
@@ -647,11 +653,10 @@
       }
 
       h1 {
-        font-size: 3em;
-        font-style: italic;
-        color: $red;
+        font-size: 3.5em;
+        text-transform: uppercase;
         font-weight: 900;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         margin-top: 0;
         line-height: 1.1;
 
@@ -670,12 +675,11 @@
       }
 
       h2 {
-        font-size: 1.7em;
-        font-weight: 900;
+        font-size: 1.5em;
+        font-weight: 700;
         line-height: 1;
-        color: $dark-grey;
-        margin-bottom: 5px;
-        font-style: italic;
+        margin-bottom: 35px;
+        font-weight: 400;
 
         @media (max-width: 767px) {
           font-size: 1.4em;
@@ -729,10 +733,6 @@ p.move-down-icon-animate {
   @media (max-width: 767px) {
     display: none;
   }
-}
-
-.black {
-  color: $dark-grey;
 }
 
 // .down-arrow {
@@ -854,146 +854,28 @@ p.move-down-icon-animate {
 
 p.offers-page-hero--code {
   font-size: 2.5em;
-  font-size: 1.75em;
   font-weight: 700;
-  margin: 25px 0;
-
+  margin-top: 18px;
+  margin-bottom: 25px;
+  
   span {
-    padding: 15px 20px;
+    padding: 8px 45px;
     border: 2px dashed #4b4b4b;
     border-color: #ffffff;
     color: $yellow;
-  }
-}
-
-// WEFIT Offer Page
-/* 
-.wefit .offers-page {
-  &-hero {
-    background-image: url('../img/fitato-offer-bg-wefit.jpg');
-    background-position: center;
-    background-size: contain;
-    background-color: $red;
-
-    p {
-      color: $yellow;
-      font-weight: 400;
-      font-size: 34px;
-    }
-
-    h1 {
-      font-size: 48px;
-    }
 
     @media only screen and (max-width: 767px) {
-      background-image: unset;
-      padding: 50px 3%;
-      padding-top: 2px;
-      text-align: center;
-
-      img {
-        max-width: 300px;
-        margin: 0 auto;
-        padding-bottom: 20px;
-      }
-
-      &__wrapper {
-        width: 100%;
-      }
-      
-      p, h1 {
-        padding-right: 0;
-      }
-
-      h1 {
-        font-size: 40px;
-      }
-
-      p {
-        font-size: 28px;
-      }
+      border-color: $dark-grey;
     }
-  }
-
-  &-intro {
-    padding-top: 50px;
-
-    h2 {
-      margin-bottom: 30px;
-    }
-
-    &--use-coupon {
-      font-size: 24px;
-
-      @media only screen and (max-width: 767px) {
-        font-size: 20px;
-
-        .offer-highlight {
-          font-size: 22px;
-        }
-      }
-    }
-
-    &--later {
-      font-size: 20px;
-      margin-top: 40px;
-    }
-  }
-
-  &-plans__item--price {
-    margin-top: 30px;
   }
 }
 
-.famfit {
- .offers-page {
-    &-hero {
-      background-image: url('../img/fitato-offer-bg-famfit.jpg');
-      
-      @media only screen and (max-width: 767px) {
-        background-image: unset;
-      }
-    }
+p.use {
+  font-size: 13px;
+  letter-spacing: 2px;
 
-    &-intro {
-      h2 {
-        margin-bottom: 10px;
-      }
-
-      @media only screen and (max-width: 767px) {
-        h2 {
-          margin-bottom: 15px;
-        }
-      }
-      &__row-plans {
-        padding: 20px 20%;
-
-        .button {
-          max-width: 250px;
-          font-size: 20px;
-        }
-
-        h3 {
-          margin-bottom: 10px;
-        }
-
-        @media only screen and (max-width: 767px) {
-          padding: 20px 10%;
-        }
-        
-        @media only screen and (max-width: 480px) {
-          padding: 20px 5%;
-        }
-      }
-    }
+  @media only screen and (max-width: 767px) {
+    font-size: 14px !important;
+    border-color: $dark-grey;
   }
-} */
-
-/* .offer-title-highlight {
-  text-transform: none;
-  line-height: 1.3em;
-
-  @media only screen and (max-width: 480px) {
-    font-size: 20px;
-  }
-} */
+}

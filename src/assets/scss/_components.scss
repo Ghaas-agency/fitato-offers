@@ -19,11 +19,15 @@
 }
 
 .yellow {
-  color: #fede0d;
+  color: #fede0d !important;
 }
 
 .white {
-  color: #ffffff;
+  color: #ffffff !important;
+}
+
+.black {
+  color: $dark-grey !important;
 }
 
 .align-center {
@@ -36,6 +40,10 @@
 
 .bold {
   font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .button,
