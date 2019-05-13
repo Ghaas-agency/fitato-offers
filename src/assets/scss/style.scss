@@ -31,18 +31,18 @@
     /* margin-top: -100px; */
     padding-top: 75px;
     padding-bottom: 75px;
-    background-image: url('../img/fitato-holi-offer.jpg');
+    background-image: url('../img/mega-may-sale.jpg');
     background-position: 15% center;
-    -webkit-background-size: 450px;
-    -moz-background-size: 450px;
-    background-size: 450px;
+    -webkit-background-size: 550px;
+    -moz-background-size: 550px;
+    background-size: 550px;
     background-repeat: no-repeat;
     /* color: #ffffff; */
     /* border-bottom: 2px solid #f7f7f7; */
     position: relative;
     min-height: 550px;
     margin-bottom: -1px;
-    text-align: center;
+    // text-align: center;
 
     /* &--prop__top-right {
       position: absolute;
@@ -61,8 +61,9 @@
     } */
 
     &__wrapper {
-      width: 55%;
+      width: 45%;
       margin-left: auto;
+      padding-top: 80px;
     }
 
     p {
@@ -74,38 +75,76 @@
 
     h1 {
       margin-top: 50px;
-      margin-bottom: 30px;
-      font-size: 68px;
+      margin-bottom: 0;
+      font-size: 48px;
       line-height: 0.85em;
       color: $red;
-      font-weight: 700;
-      font-size: 3.3em;
+      font-weight: 900;
 
-      .normal {
-        font-size: 0.75em;
+      // .normal {
+      //   font-size: 0.75em;
+      // }
+    }
+
+    h2 {
+      margin-top: 0;
+      font-weight: 400;
+      font-size: 34px;
+    }
+
+    p.offers-page-hero--code {
+      font-size: 1.6em;
+      font-weight: 700;
+      margin-top: 18px;
+      margin-bottom: 25px;
+      
+      span {
+        padding: 8px 45px;
+        border: 2px dashed $dark-grey;
+        // border-color: #ffffff;
+        color: $dark-grey;
+    
+        @media only screen and (max-width: 767px) {
+          border-color: $dark-grey;
+        }
       }
+    }
+    
+    p.use {
+      font-size: 21px;
+      color: $dark-grey;
     }
 
     /* @media (min-width: 1440px) {
       min-height: 750px;
     } */
 
+    @media only screen and (max-width: 1200px) {
+      -webkit-background-size: 450px;
+      -moz-background-size: 450px;
+      background-size: 450px;
+    }
+
     @media (max-width: 979px) {
+      -webkit-background-size: 350px;
+      -moz-background-size: 350px;
+      background-size: 350px;
+
       h1 {
         font-size: 3em;
       }
     }
 
     @media (max-width: 767px) {
-      min-height: 100vh;
+      // min-height: 100vh;
       padding-top: 30px;
       padding-bottom: 0px;
       padding-left: 5%;
       padding-right: 5%;
       -webkit-background-size: 350px;
       -moz-background-size: 350px;
-      background-size: 350px;
-      background-position: top;
+      background-position: center 20px;
+      text-align: center;
 
       &__wrapper {
         width: 100%;
@@ -113,7 +152,7 @@
 
       h1 {
         font-size: 38px;
-        margin-top: 350px;
+        margin-top: 300px;
       }
 
       &--prop__top-right {
@@ -566,169 +605,281 @@
   }
 }
 
-.fit-55 {
+.loyalty {
   .offers-page {
     &-hero {
-      background-image: url('../img/game-of-workouts-fitato.jpg');
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: bottom;
-      text-align: left;
-      padding-top: 100px;
-      padding-bottom: 0;
-      overflow: auto;
-      min-height: 100vh;
-      
-      /* @media (max-width: 1200px) {
-        background-position: right 30%;
-        -webkit-background-size: 50% 50%;
-        -moz-background-size: 50%;
-        background-size: 50%;
-      } */
-
-      @media (max-width: 979px) {
-        min-height: 550px;
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        background-size: contain;
-        background-position: top;
-        padding-top: 60px;
-      }
-
-      @media only screen and (max-width: 767px) {
-        background-color: #ffffff;
-        background-position: left -35%;
-        background-size: 180%;
-        min-height: 600px;
-        padding-bottom: 0px;
-        padding-top: 100px;
-
-        * {
-          color: $dark-grey !important;
-        }
-      }
-      
-      @media (max-width: 480px) {
-        background-size: 185%;
-        background-position: left -15%;
-      }
-
-      @media (max-width: 380px) {
-        min-height: 550px;
-      }
+      background-image: url('../img/loyalty.png');
+      background-color: $red;
+      background-position: 83%;
+      background-size: 680px;
 
       &__wrapper {
-        margin: 0;
-        width: 50%;
-        margin-left: auto;
-        padding-right: 20px;
-        padding-left: 5%;
-        margin-top: 10vh;
-        text-align: center;
+        margin-left: 0;
+      }
 
-        @media (max-width: 979px) {
-          margin-top: 0;
+      .trophy {
+        clear: both;
+        display: flex;
+        border-bottom: 5px solid #ffffff;
+        max-width: 370px;
+
+        img {
+          height: 175px;
         }
 
-        @media (max-width: 767px) {
-          width: 100%;
-          padding-right: 0px;
-          padding-left: 0px;
-          margin-top: 450px;
-          margin-top: 75vw;
-          padding-bottom: 0vw;
-        }
-
-        @media (max-width: 480px) {
-          padding-bottom: 0;
-          margin-top: 80vw;
+        p {
+          display: inline-block;
+          font-size: 3.1rem;
+          max-width: 250px;
+          line-height: 1.1;
+          margin-left: 15px;
         }
       }
 
       h1 {
-        font-size: 3.5em;
-        text-transform: uppercase;
-        font-weight: 900;
-        margin-bottom: 10px;
-        margin-top: 0;
+        font-weight: 700;
+        font-size: 28px;
+        margin-top: 20px;
         line-height: 1.1;
-
-        @media (max-width: 979px) {
-          font-size: 2.5em;
-        }
-
-        @media (max-width: 767px) {
-          margin-top: 10px;
-          font-size: 2em;
-        }
-
-        @media (max-width: 480px) {
-          font-size: 1.7em;
-        }
       }
 
       h2 {
-        font-size: 1.5em;
-        font-weight: 700;
-        line-height: 1;
-        margin-bottom: 35px;
-        font-weight: 400;
-
-        @media (max-width: 767px) {
-          font-size: 1.4em;
-        }
-
-        @media (max-width: 380px) {
-          font-size: 1.2em;
-        }
+        font-weight: 300;
+        font-size: 24px;
+      }
+      
+      p.use {
+        font-weight: 300;
+        font-size: 14px;
       }
 
-      p.focus {
-        font-size: 1.5em;
-        // font-size: 2.5em;
-        color: #ffffff;
-        margin-bottom: 50px;
-        margin-bottom: 15px;
+      p.offers-page-hero--code {
+        font-size: 1.6em;
         font-weight: 400;
-        margin-top: 5px;
-        line-height: 1.2;
-
-        @media (max-width: 767px) {
-          font-size: 1.2em;
+        margin-top: 18px;
+        margin-bottom: 25px;
+        
+        span {
+          padding: 8px 25px;
+          border: 1px dashed #ffffff;
+          color: #ffffff;
         }
       }
 
       p {
-        @media (max-width: 767px) {
-          font-size: 1.3em;
+        font-size: 16px;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        background-position: right;
+        background-size: 580px;
+      }
+      
+      @media only screen and (max-width: 979px) {
+        background-size: 480px;
+
+        &__wrapper {
+          padding-top: 0;
+        }
+
+        .trophy {
+          img {
+            height: 145px;
+          }
+  
+          p {
+            font-size: 2.6rem;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 767px) {
+        background-position: right bottom;
+        background-size: 350px;
+        padding-bottom: 50px;
+        text-align: left;
+      }
+
+      @media only screen and (max-width: 480px) {
+        background-size: 300px;
+
+        .trophy {
+          img {
+            height: 70px;
+          }
+  
+          p {
+            font-size: 2rem;
+          }
         }
       }
     }
-
-    &-intro {
-      padding-top: 50px;
-      // margin-top: -50px;
-      z-index: 99;
-      position: relative;
-    }
   }
 }
 
-p.move-down-icon-animate {
-  font-size: 16px !important;
-  text-align: left;
-  padding-top: 100px;
-  font-style: normal;
-  font-weight: 400;
-  -webkit-filter: opacity(0.9);
-  filter: opacity(0.9);
+// .fit-55 {
+//   .offers-page {
+//     &-hero {
+//       background-image: url('../img/game-of-workouts-fitato.jpg');
+//       -webkit-background-size: cover;
+//       -moz-background-size: cover;
+//       background-size: cover;
+//       background-repeat: no-repeat;
+//       background-position: bottom;
+//       text-align: left;
+//       padding-top: 100px;
+//       padding-bottom: 0;
+//       overflow: auto;
+//       min-height: 100vh;
+      
+//       /* @media (max-width: 1200px) {
+//         background-position: right 30%;
+//         -webkit-background-size: 50% 50%;
+//         -moz-background-size: 50%;
+//         background-size: 50%;
+//       } */
 
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
+//       @media (max-width: 979px) {
+//         min-height: 550px;
+//         -webkit-background-size: contain;
+//         -moz-background-size: contain;
+//         background-size: contain;
+//         background-position: top;
+//         padding-top: 60px;
+//       }
+
+//       @media only screen and (max-width: 767px) {
+//         background-color: #ffffff;
+//         background-position: left -35%;
+//         background-size: 180%;
+//         min-height: 600px;
+//         padding-bottom: 0px;
+//         padding-top: 100px;
+
+//         * {
+//           color: $dark-grey !important;
+//         }
+//       }
+      
+//       @media (max-width: 480px) {
+//         background-size: 185%;
+//         background-position: left -15%;
+//       }
+
+//       @media (max-width: 380px) {
+//         min-height: 550px;
+//       }
+
+//       &__wrapper {
+//         margin: 0;
+//         width: 50%;
+//         margin-left: auto;
+//         padding-right: 20px;
+//         padding-left: 5%;
+//         margin-top: 10vh;
+//         text-align: center;
+
+//         @media (max-width: 979px) {
+//           margin-top: 0;
+//         }
+
+//         @media (max-width: 767px) {
+//           width: 100%;
+//           padding-right: 0px;
+//           padding-left: 0px;
+//           margin-top: 450px;
+//           margin-top: 75vw;
+//           padding-bottom: 0vw;
+//         }
+
+//         @media (max-width: 480px) {
+//           padding-bottom: 0;
+//           margin-top: 80vw;
+//         }
+//       }
+
+//       h1 {
+//         font-size: 3.5em;
+//         text-transform: uppercase;
+//         font-weight: 900;
+//         margin-bottom: 10px;
+//         margin-top: 0;
+//         line-height: 1.1;
+
+//         @media (max-width: 979px) {
+//           font-size: 2.5em;
+//         }
+
+//         @media (max-width: 767px) {
+//           margin-top: 10px;
+//           font-size: 2em;
+//         }
+
+//         @media (max-width: 480px) {
+//           font-size: 1.7em;
+//         }
+//       }
+
+//       h2 {
+//         font-size: 1.5em;
+//         font-weight: 700;
+//         line-height: 1;
+//         margin-bottom: 35px;
+//         font-weight: 400;
+
+//         @media (max-width: 767px) {
+//           font-size: 1.4em;
+//         }
+
+//         @media (max-width: 380px) {
+//           font-size: 1.2em;
+//         }
+//       }
+
+//       p.focus {
+//         font-size: 1.5em;
+//         // font-size: 2.5em;
+//         color: #ffffff;
+//         margin-bottom: 50px;
+//         margin-bottom: 15px;
+//         font-weight: 400;
+//         margin-top: 5px;
+//         line-height: 1.2;
+
+//         @media (max-width: 767px) {
+//           font-size: 1.2em;
+//         }
+//       }
+
+//       p {
+//         @media (max-width: 767px) {
+//           font-size: 1.3em;
+//         }
+//       }
+//     }
+
+//     &-intro {
+//       padding-top: 50px;
+//       // margin-top: -50px;
+//       z-index: 99;
+//       position: relative;
+//     }
+//   }
+// }
+
+// p.move-down-icon-animate {
+//   font-size: 16px !important;
+//   text-align: left;
+//   padding-top: 100px;
+//   font-style: normal;
+//   font-weight: 400;
+//   -webkit-filter: opacity(0.9);
+//   filter: opacity(0.9);
+
+//   @media (max-width: 767px) {
+//     display: none;
+//   }
+// }
 
 // .down-arrow {
 //   margin-right: 7px;
@@ -835,42 +986,14 @@ p.move-down-icon-animate {
 //   padding: 0;
 // }
 
-.banner-mobile {
-  display: none;
+// .banner-mobile {
+//   display: none;
 
-  @media (max-width: 767px) {
-    display: block;
-  }
-}
+//   @media (max-width: 767px) {
+//     display: block;
+//   }
+// }
 
 // .countdown-timer {
 //   padding-top: 45px;
 // }
-
-p.offers-page-hero--code {
-  font-size: 2.5em;
-  font-weight: 700;
-  margin-top: 18px;
-  margin-bottom: 25px;
-  
-  span {
-    padding: 8px 45px;
-    border: 2px dashed #4b4b4b;
-    border-color: #ffffff;
-    color: $yellow;
-
-    @media only screen and (max-width: 767px) {
-      border-color: $dark-grey;
-    }
-  }
-}
-
-p.use {
-  font-size: 13px;
-  letter-spacing: 2px;
-
-  @media only screen and (max-width: 767px) {
-    font-size: 14px !important;
-    border-color: $dark-grey;
-  }
-}
