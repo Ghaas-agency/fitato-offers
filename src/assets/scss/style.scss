@@ -29,39 +29,59 @@
 .offers-page {
   &-hero {
     /* margin-top: -100px; */
-    padding-top: 75px;
-    padding-bottom: 100px;
-    background-color: #000000;
-    background-image: url('../img/crown40.png');
-    background-position: calc(50% + 300px);
-    background-size: 400px;
+    padding-top: 250px;
+    padding-bottom: 120px;
+    // background-color: $f;
+    background-image: url('../img/fitato-june-jackpot-offer.png');
+    background-position: calc(50% - 250px) 70%;
+    background-size: 800px;
     background-repeat: no-repeat;
     /* color: #ffffff; */
     /* border-bottom: 2px solid #f7f7f7; */
     position: relative;
     min-height: 550px;
     margin-bottom: -1px;
-    // overflow: hidden;
+    overflow: hidden;
     // text-align: center;
 
     @media only screen and (max-width: 979px) {
-      background-position: calc(50% + 180px);
+      background-position: calc(50% - 150px) 70%;
+      background-size: 700px;
     }
     
     @media only screen and (max-width: 767px) {
-      background-position: right bottom;
-      padding-top: 35px;
-      background-size: 50vw;
+      background-position: center -100px;
+      padding-top: 520px;
+      // background-size: 50vw;
+      text-align: center;
+    }
+    
+    @media only screen and (max-width: 480px) {
+      background-size: 600px;
+      padding-top: 450px;
     }
 
-    @media only screen and (max-width: 480px) {
-      background-size: 65vw;
+    &--rect {
+      position: absolute;
+      z-index: -1;
+      top: -590px;
+      left: calc(50% - 2000px);
+      background-color: $red;
+      height: 1800px;
+      width: 2300px;
+      border-radius: 100px;
+      transform: rotate(35deg);
+
+      @media only screen and (max-width: 480px) {
+        transform: rotate(5deg);
+        left: calc(50% - 2160px);
+        top: -80px;
+      }
     }
 
     &__wrapper {
-      max-width: 60%;
-      // margin-left: auto;
-      // padding-top: 80px;
+      max-width: 40%;
+      margin-left: auto;
 
       @media only screen and (max-width: 767px) {
         max-width: 100%;
@@ -81,8 +101,8 @@
 
     h1 {
       margin-top: 0;
-      margin-bottom: 50px;
-      font-size: 42px;
+      margin-bottom: 5px;
+      font-size: 48px;
       line-height: 1.2;
       color: $f;
       font-weight: 300;
@@ -93,14 +113,12 @@
 
       @media only screen and (max-width: 767px) {
         margin-top: 0;
-        font-size: 28px;
-        margin-bottom: 35px;
       }
     }
 
     h2 {
       margin-top: 0;
-      font-weight: 700;
+      font-weight: 300;
       font-size: 36px;
       line-height: 0.9;
       margin-bottom: 45px;
@@ -115,7 +133,7 @@
       }
 
       @media only screen and (max-width: 767px) {
-        font-size: 24px;
+        // font-size: 24px;
         line-height: 1.2;
       }
     }
@@ -128,12 +146,8 @@
       
       span {
         padding: 8px 20px;
-        border: 2px dashed $f;
-        color: $yellow;
-    
-        @media only screen and (max-width: 767px) {
-          border-color: $dark-grey;
-        }
+        border: 2px dashed $yellow;
+        color: $f;
       }
     }
     
@@ -142,17 +156,6 @@
       font-size: 16px;
       font-weight: 300;
       // color: $dark-grey;
-    }
-
-    &--angle {
-      position: absolute;
-      bottom: -50px;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 100vw 50px 0;
-      border-color: transparent #000000 transparent transparent;
-
     }
   }
 
