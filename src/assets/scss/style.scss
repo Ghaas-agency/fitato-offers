@@ -73,9 +73,9 @@
       transform: rotate(35deg);
 
       @media only screen and (max-width: 480px) {
-        transform: rotate(5deg);
-        left: calc(50% - 2160px);
-        top: -80px;
+        transform: rotate(-50deg);
+        left: calc(50% - 1080px);
+        top: -1520px;
       }
     }
 
