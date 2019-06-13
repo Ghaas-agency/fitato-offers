@@ -5,13 +5,13 @@
 }
 
 .red {
-  color: #EB1F2E;
+  color: $red !important;
 }
 
 .line {
   height: 4px;
   width: 100px;
-  background-color: #EB1F2E;
+  background-color: $red;
   margin: 25px 0;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -39,7 +39,15 @@
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 700 !important;
+}
+
+.extra-bold {
+  font-weight: 900 !important;
+}
+
+.light {
+  font-weight: 300 !important;
 }
 
 .uppercase {
