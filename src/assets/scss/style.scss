@@ -569,134 +569,73 @@
   }
 }
 
-// .extratime {
-//   .offers-page {
-//     &-hero {
-//       background-image: url('/assets/img/fitato-extra-time.jpg');
-//       background-position: calc(50% + 300px);
-//       background-size: 450px;
-//       background-repeat: no-repeat;
-//       padding-top: 120px;
-//       padding-bottom: 80px;
+$one: #111111;
 
-//       @media only screen and (max-width: 767px) {
-//         background-position: bottom;
-//         background-size: 320px;
-//         padding-top: 50px;
-//         padding-bottom: 350px;
-//         margin-bottom: 50px;
-//       }
+.forty40 {
+  .offers-page {
+    &-hero {
+      background-color: $one;
+      background-image: url('/assets/img/forty-40-offer.jpg');
+      background-size: 600px;
+      padding-top: 200px;
+      padding-bottom: 250px;
 
-//       &__wrapper {
-//         max-width: 50%;
-//         margin-left: 0;
-  
-//         @media only screen and (max-width: 767px) {
-//           max-width: 100%;
-//         }
-  
-//         * {
-//           color: $dark-grey;
-//         }
-//       }
+      h1 {
+        border: 0;
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 1.2;
 
-//       h1 {
-//         font-size: 2.2em;
+        span {
+          font-size: 1em;
+        }
+
+        @media only screen and (max-width: 979px) {
+          font-size: 42px;
+        }
         
-//         @media only screen and (max-width: 767px) {
-//           font-size: 1.8em;
-//         }
-//       }
+        @media only screen and (max-width: 767px) {
+          font-size: 36px;
+        }
+      }
+
+      .white-angle,
+      .red-angle {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 80px 100vw;
+        border-color: transparent transparent $f transparent;
+      }
+
+      .red-angle {
+        border-width: 0 0 100px 100vw;
+        border-color: transparent transparent $red transparent;
+      }
+
+      @media only screen and (max-width: 979px) {
+        background-position: calc(50% - 180px) 70%;
+        background-size: 450px;
+        padding-top: 100px;
+      }
       
-//       h2 {
-//         font-size: 1.8em;
-
-//         @media only screen and (max-width: 767px) {
-//           font-size: 1.4em;
-//         }
-//       }
-
-//       p.offers-page-hero--code {
-//         span {
-//           border: 2px dashed $red;
-//           color: $dark-grey;
-//         }
-//       }
-//     }
-
-//     &-intro {
-//       padding-top: 0;
-
-//       &__items {
-//         display: flex;
-//         flex-wrap: wrap;
-//         justify-content: center;
-//         width: 100%;
-        
-//         @media only screen and (max-width: 767px) {
-//           flex-direction: column;
-//         }
-//       }
-
-//       &__item {
-//         flex: 1;
-//         border-radius: 5px;
-//         border: 1px solid darken($light-grey, 1.1);
-//         margin: 10px 30px;
-//         padding: 30px;
-//         padding-bottom: 50px;
-        
-//         @media only screen and (max-width: 767px) {
-//           margin: 10px;
-//         }
-
-//         &:first-child {
-//           .offers-page-plans__item--price {
-//             margin-top: 70px;
-//           }
-//         }
-
-//         h3 {
-//           margin-bottom: 20px;
-//           font-size: 2.2em;
-//         }
-
-//         h4 {
-//           line-height: 1.2;
-
-//           .small {
-//             font-size: 0.8em;
-//             opacity: 0.7;
-//           }
-//         }
-
-//         p {
-//           max-width: 320px;
-//           margin: 10px auto;
-//         }
-
-//         .offers-page-plans__item--price-strike {
-//           margin-top: 30px;
-//         }
-//       }
-
-//       .buy-now {
-//         margin-top: 20px;
-//         margin-bottom: 50px;
-        
-//         .button {
-//           padding: 15px 30px;
-//           font-size: 20px;
-//         }
-
-//         & + p {
-//           max-width: 500px;
-//           margin: 10px auto 30px;
-//         }
-//       }
-//     }
-//   }
-// }
+      @media only screen and (max-width: 767px) {
+        background-position: center 10px;
+        padding-top: 450px;
+        padding-bottom: 100px;
+      }
+      
+      @media only screen and (max-width: 480px) {
+        background-size: 340px;
+        padding-top: 350px;
+      }
+    }
+  }
+}
 
 // p.move-down-icon-animate {
 //   font-size: 16px !important;
