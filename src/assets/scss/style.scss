@@ -637,6 +637,106 @@ $one: #111111;
   }
 }
 
+.stranger {
+  .offers-page {
+    &-hero {
+      background: none;
+      padding: 0;
+      min-height: 100px;
+
+      &__wrapper {
+        margin: 10px auto;
+        max-width: 100%;
+      }
+
+      .discount-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0;
+
+        @media only screen and (max-width: 767px) {
+          flex-direction: column;  
+        }
+        
+        .discount-item {
+          flex: 1;
+          padding: 60px 20px;
+          margin: 20px;
+          background-image: url('/assets/img/strange-bg.jpg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          border-radius: 5px;
+
+          @media only screen and (max-width: 767px) {
+            margin-bottom: 40px;
+          }
+
+          * {
+            color: $f;
+          }
+
+          h4 {
+            font-size: 28px;
+            margin: 0;
+            line-height: 1.2;
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-size: 20px;
+            margin: 0;
+          }
+
+          &:first-child,
+          &:nth-child(2) {
+            position: relative;
+
+            &::before {
+              content: '+';
+              position: absolute;
+              right: -27.5px;
+              top: 50%;
+              transform: translate(0, -50%);
+              font-size: 30px;
+              
+              @media only screen and (max-width: 767px) {
+                top: calc(100% + 15px);
+                right: unset;
+                left: 50%;
+                transform: translate(-50%, 0);
+              }
+            }
+          }
+        }
+      }
+
+      p.use,
+      p.on {
+        font-size: 18px;
+        font-weight: 400;
+      }
+    }
+
+    &-intro {
+      background-image: url('/assets/img/strange-bg-large.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-top: 50px;
+
+      .offers-page-plans__item {
+        background: $f;
+      }
+    }
+  }
+
+  .partner-deals {
+    padding: 50px 0;
+  }
+}
+
 // p.move-down-icon-animate {
 //   font-size: 16px !important;
 //   text-align: left;
