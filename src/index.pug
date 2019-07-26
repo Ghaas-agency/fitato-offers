@@ -1,25 +1,27 @@
 include components/_index.pug
 doctype html
 html(lang='en')
-  +head('Get Flat 15% Off + 30% Cashback + Exclusive Deals On Fitato Partner Products')
+  +head('Get Flat 20% Off + 50% Cashback on all Fitato Passes')
 
   body
     +nav
 
-    main(style="overflow: hidden;").stranger
-      img(src="/assets/img/stranger-deals.jpg", alt="fitato stranger deals", style="width: 100%;max-height: 720px; object-fit: cover;")
+    main(style="overflow: hidden;").forty40
       .offers-page-hero
+        .red-angle
+        .white-angle
         .container
-          .offers-page-hero__wrapper.align-center
-            //- h1.uppercase.italic.red(style="display: inline-block") Just July
-            //-   span Offer
-            //- h2.italic Flat 
-            //-   span.red 25%
-            //-   |  Off +
-            //-   br
-            //-   span.red 20%
-            //-   |  Cashback
-            //- p.italic(style="margin-bottom: 45px") On All Fitato Passes
+          .offers-page-hero__wrapper
+            h1.italic.white.light The 
+              span.red.extra-bold Ultimate
+              |  Offer
+            h2.italic.white Flat 
+              span.red 20%
+              |  Off +
+              br
+              span.red 50%
+              |  Cashback
+            p.italic.white.light(style="margin-bottom: 45px; opacity: 0.9") On All Fitato Passes
             //- .line
             //- p.focus Flat 
             //-   span.bold.yellow 25% Off 
@@ -29,22 +31,10 @@ html(lang='en')
             //- p.move-down-icon-animate
             //-   img.down-arrow(src='assets/img/icons/arrow-down.svg', width='25', alt='down arrow')
             //-   | Scroll down for the exclusive offer
-            .discount-items.center
-              .discount-item
-                h4 Flat 15% Discount
-                p On All Fitato Passes
-              .discount-item
-                h4 Flat 30% Cashback
-                p On All Fitato Passes
-              .discount-item
-                h4 Exclusive Deals On
-                p Fitato Partner Products
-            p.use Use Coupon Code:
+            p.use.white Use Coupon Code:
             p.offers-page-hero--code
-              span STRANGER
-            p.on On Your Fitato App
-            p.black(style='font-size: 1.3em; font-weight: 700; padding-top: 10px') OR
-            p.black(style='font-size: 1.3em; margin-bottom: 0') Pre-Book Here:
+              span.white BEGIN
+            p.on.white On Your Fitato App
 
       //- .offers-page-steps
       //-   .container
@@ -66,7 +56,8 @@ html(lang='en')
           //-   | Use Coupon Code
           //-   span.offer-highlight FLASH50
           //-   span.offer-highlight--clear on your Fitato App
-          
+          p(style='font-size: 1.3em; font-weight: 700; padding-top: 10px') OR
+          p(style='font-size: 1.3em; font-weight: 700; margin-bottom: 0') Pre-Book Now:
           .offers-page-plans__items
             .offers-page-plans__item
               .offers-page-plans__item--title
@@ -78,10 +69,10 @@ html(lang='en')
                 p
                   | Get unlimited access to every Fitato partner facility for three months.
                 p.offers-page-plans__item--price-strike ₹5,499
-                p.offers-page-plans__item--price ₹4,674
-                p.offers-page-plans__item--get-cb Get Cashback: ₹1,408
+                p.offers-page-plans__item--price ₹4,399
+                p.offers-page-plans__item--get-cb Get Cashback: ₹2,199
               .offers-page-plans__item--cta
-                a.button.button-fluid(href='https://imjo.in/NVvBPJ', target='_blank', rel='noopener noreferrer') Buy Now
+                a.button.button-fluid(href='https://imjo.in/4UMreU', target='_blank', rel='noopener noreferrer') Buy Now
             .offers-page-plans__item
               .offers-page-plans__item--title
                 h3
@@ -92,10 +83,10 @@ html(lang='en')
                 p
                   | Get unlimited  access to every Fitato partner facility for two months.
                 p.offers-page-plans__item--price-strike ₹3,899
-                p.offers-page-plans__item--price ₹3,314
-                p.offers-page-plans__item--get-cb Get Cashback: ₹994
+                p.offers-page-plans__item--price ₹3,119
+                p.offers-page-plans__item--get-cb Get Cashback: ₹1,559
               .offers-page-plans__item--cta
-                a.button.button-fluid(href='https://imjo.in/Qy4GTG', target='_blank', rel='noopener noreferrer') Buy Now
+                a.button.button-fluid(href='https://imjo.in/DmymrK', target='_blank', rel='noopener noreferrer') Buy Now
             .offers-page-plans__item
               .offers-page-plans__item--title
                 h3
@@ -106,31 +97,22 @@ html(lang='en')
                 p
                   | Get unlimited access to every Fitato partner facility for one month.
                 p.offers-page-plans__item--price-strike ₹2,199
-                p.offers-page-plans__item--price ₹1,869
-                p.offers-page-plans__item--get-cb Get Cashback: ₹560
+                p.offers-page-plans__item--price ₹1,759
+                p.offers-page-plans__item--get-cb Get Cashback: ₹879
               .offers-page-plans__item--cta
-                a.button.button-fluid(href='https://imjo.in/Ky9p4W', target='_blank', rel='noopener noreferrer') Buy Now
+                a.button.button-fluid(href='https://imjo.in/q5K9jZ', target='_blank', rel='noopener noreferrer') Buy Now
 
-          
-
-      .partner-deals.align-center
-        .container
-          h3 Fitato Partner Deals
-          img(src="/assets/img/partner-deals-1.png", alt="fitato partner deals")
-          img(src="/assets/img/partner-deals-2.png", alt="fitato partner deals")
-
-          div(style='margin-top: 30px')
-            small
-              | * Offer valid till 15
-              sup th
-              |  July 2019 for first time customers only.
-            //- br
-            //- small * Not valid on payment made through Fitato wallet.
-            br
-            small * Pass can be activated later.
-          div(style='margin-top: 30px')
+          small
+            | * Offer valid till 31
+            sup st
+            |  July 2019 for the first-time customers only.
+          //- br
+          //- small * Not valid on payment made through Fitato wallet.
+          br
+          small * Pass can be activated later.
+          div(style='margin-top: 50px')
             h4(style='margin-bottom: 5px') Have questions? Let us help.
-            a.button-inverted(href='tel:+918448448546') Talk to us
+            a.button(href='tel:+918448448546') Talk to us
 
       +wishWork
       +downloadApp

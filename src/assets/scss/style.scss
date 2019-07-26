@@ -71,7 +71,7 @@
     }
 
     p {
-      font-size: 26px;
+      font-size: 22px;
       line-height: 1.3em;
       margin: 0;
       margin-bottom: 15px;
@@ -569,22 +569,21 @@
   }
 }
 
-$one: #111111;
-
 .forty40 {
   .offers-page {
     &-hero {
-      background-color: $one;
-      background-image: url('/assets/img/forty-40-offer.jpg');
-      background-size: 600px;
-      padding-top: 200px;
-      padding-bottom: 250px;
+      background-color: $dark-grey;
+      background-image: url('/assets/img/offer-begin.png');
+      background-size: 500px;
+      padding-top: 150px;
+      padding-bottom: 200px;
 
       h1 {
         border: 0;
-        font-size: 46px;
+        font-size: 54px;
         font-weight: 700;
         line-height: 1.2;
+        margin-bottom: 25px;
 
         span {
           font-size: 1em;
@@ -612,6 +611,10 @@ $one: #111111;
         border-color: transparent transparent $f transparent;
       }
 
+      h2 {
+        margin-bottom: 15px;
+      }
+
       .red-angle {
         border-width: 0 0 100px 100vw;
         border-color: transparent transparent $red transparent;
@@ -619,7 +622,7 @@ $one: #111111;
 
       @media only screen and (max-width: 979px) {
         background-position: calc(50% - 180px) 70%;
-        background-size: 450px;
+        background-size: 400px;
         padding-top: 100px;
       }
       
@@ -630,110 +633,10 @@ $one: #111111;
       }
       
       @media only screen and (max-width: 480px) {
-        background-size: 340px;
-        padding-top: 350px;
+        background-size: 300px;
+        padding-top: 330px;
       }
     }
-  }
-}
-
-.stranger {
-  .offers-page {
-    &-hero {
-      background: none;
-      padding: 0;
-      min-height: 100px;
-
-      &__wrapper {
-        margin: 10px auto;
-        max-width: 100%;
-      }
-
-      .discount-items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 20px 0;
-
-        @media only screen and (max-width: 767px) {
-          flex-direction: column;  
-        }
-        
-        .discount-item {
-          flex: 1;
-          padding: 60px 20px;
-          margin: 20px;
-          background-image: url('/assets/img/strange-bg.jpg');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-          border-radius: 5px;
-
-          @media only screen and (max-width: 767px) {
-            margin-bottom: 40px;
-          }
-
-          * {
-            color: $f;
-          }
-
-          h4 {
-            font-size: 28px;
-            margin: 0;
-            line-height: 1.2;
-            margin-bottom: 10px;
-          }
-
-          p {
-            font-size: 20px;
-            margin: 0;
-          }
-
-          &:first-child,
-          &:nth-child(2) {
-            position: relative;
-
-            &::before {
-              content: '+';
-              position: absolute;
-              right: -27.5px;
-              top: 50%;
-              transform: translate(0, -50%);
-              font-size: 30px;
-              
-              @media only screen and (max-width: 767px) {
-                top: calc(100% + 15px);
-                right: unset;
-                left: 50%;
-                transform: translate(-50%, 0);
-              }
-            }
-          }
-        }
-      }
-
-      p.use,
-      p.on {
-        font-size: 18px;
-        font-weight: 400;
-      }
-    }
-
-    &-intro {
-      background-image: url('/assets/img/strange-bg-large.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      margin-top: 50px;
-
-      .offers-page-plans__item {
-        background: $f;
-      }
-    }
-  }
-
-  .partner-deals {
-    padding: 50px 0;
   }
 }
 
