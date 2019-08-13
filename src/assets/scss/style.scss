@@ -572,10 +572,10 @@
 .forty40 {
   .offers-page {
     &-hero {
-      background-color: $dark-grey;
-      background-image: url('/assets/img/offer-begin.png');
-      background-size: 500px;
-      padding-top: 150px;
+      background-color: #111111;
+      background-image: url('/assets/img/offer-ind4k.jpg');
+      background-size: 550px;
+      padding-top: 100px;
       padding-bottom: 200px;
 
       h1 {
@@ -596,6 +596,11 @@
         @media only screen and (max-width: 767px) {
           font-size: 36px;
         }
+      }
+
+      img {
+        max-width: 350px;
+        width: 100%;
       }
 
       .white-angle,
@@ -634,7 +639,7 @@
       
       @media only screen and (max-width: 480px) {
         background-size: 300px;
-        padding-top: 330px;
+        padding-top: 300px;
       }
     }
   }
