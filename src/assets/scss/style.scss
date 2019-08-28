@@ -28,37 +28,40 @@
 
 .offers-page {
   &-hero {
-    padding: 100px 0;
-    background-image: url('../img/24-hours-falsh-sale.png');
+    padding-top: 100px;
+    padding-bottom: 130px;
+    background-image: url('../img/offer-bg.jpg');
     background-position: calc(50% - 300px) center;
-    background-size: 450px;
+    background-size: 550px;
     background-repeat: no-repeat;
+    background-color: #000000;
+    color: $f;
     position: relative;
-    min-height: 550px;
+    min-height: 650px;
     margin-bottom: -1px;
     overflow: hidden;
 
     @media only screen and (max-width: 1200px) {
-      padding-top: 150px;
-      background-position: calc(50% - 250px) 0;
+      padding-top: 50px;
+      background-position: calc(50% - 250px) 30%;
       background-size: 400px;
     }
 
     @media only screen and (max-width: 979px) {
-      background-position: calc(50% - 200px) 0;
+      background-position: calc(50% - 200px) 30%;
       background-size: 350px;
     }
     
     @media only screen and (max-width: 767px) {
-      background-position: center 0;
-      padding-top: 470px;
-      padding-bottom: 0;
+      background-position: center 25px;
+      padding-top: 320px;
+      padding-bottom: 100px;
       text-align: center;
     }
     
     @media only screen and (max-width: 480px) {
       background-size: 320px;
-      padding-top: 430px;
+      // padding-top: 430px;
     }
 
     &__wrapper {
@@ -77,41 +80,37 @@
       margin-bottom: 15px;
     }
 
-    h1 {
-      margin-top: 0;
-      margin-bottom: 30px;
-      font-size: 70px;
-      line-height: 1;
-      font-weight: 900;
-      border-top: 2px solid darken($light-grey, 20%);
-      border-bottom: 2px solid darken($light-grey, 20%);
-      padding: 12px 0;
+    // h1 {
+    //   margin-top: 0;
+    //   margin-bottom: 30px;
+    //   font-size: 70px;
+    //   line-height: 1;
+    //   font-weight: 900;
+    //   border-top: 2px solid darken($light-grey, 20%);
+    //   border-bottom: 2px solid darken($light-grey, 20%);
+    //   padding: 12px 0;
 
-      span {
-        font-size: 0.4em;
-      }
+    //   span {
+    //     font-size: 0.4em;
+    //   }
 
-      @media only screen and (max-width: 979px) {
-        font-size: 50px;
-      }
+    //   @media only screen and (max-width: 979px) {
+    //     font-size: 50px;
+    //   }
 
-      @media only screen and (max-width: 767px) {
-        font-size: 35px;
-      }
-    }
+    //   @media only screen and (max-width: 767px) {
+    //     font-size: 35px;
+    //   }
+    // }
 
     h2 {
-      margin-top: 60px;
+      margin-top: 0px;
       font-size: 42px;
       line-height: 1.2;
 
       .small {
         font-weight: 300;
         font-size: 20px;
-      }
-
-      @media only screen and (max-width: 1200px) {
-        margin-top: 0px;
       }
 
       @media only screen and (max-width: 979px) {
@@ -132,14 +131,40 @@
       span {
         padding: 8px 20px;
         border: 2px dashed $red;
-        color: $dark-grey;
+        color: $f;
       }
     }
     
     p.use,
     p.on {
       font-size: 16px;
-      color: $dark-grey;
+      color: $f;
+    }
+
+    .white-angle,
+    .red-angle {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 80px 100vw;
+      border-color: transparent transparent $f transparent;
+    }
+
+    .red-angle {
+      border-width: 0 0 100px 100vw;
+      border-color: transparent transparent $red transparent;
+    }
+
+    .fitindian {
+      max-width: 400px;
+
+      @media only screen and (max-width: 480px) {
+        max-width: 95%;
+      }
     }
   }
 
