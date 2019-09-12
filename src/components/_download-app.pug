@@ -1,4 +1,4 @@
-mixin downloadApp
+mixin downloadApp(pathPrefix)
   section.partial-download-swipe
     .container
       .partial-download-swipe__left
@@ -7,8 +7,8 @@ mixin downloadApp
           | Swim your way to Zumba via MMA and Yoga! Experiment each day with a new adventure and push your body to the limits with your Fitato Pass.
         .partial-app-icons
           a(href='https://play.google.com/store/apps/details?id=fit.fitato.health&hl=en', target='_blank', rel='noopener noreferrer')
-            img.partial-app-icon(src='/assets/img/icons/google-play-store.svg', alt='fitato on google play store')
+            img.partial-app-icon(src=`${pathPrefix}assets/img/icons/google-play-store.svg`, alt='fitato on google play store')
           a(href='https://itunes.apple.com/in/app/fitato/id1300323768', target='_blank', rel='noopener noreferrer')
-            img.partial-app-icon(src='/assets/img/icons/apple-app-store.svg', alt='fitato on app store')
+            img.partial-app-icon(src=`${pathPrefix}assets/img/icons/apple-app-store.svg`, alt='fitato on app store')
       .partial-download-swipe__right
-        img(src='/assets/img/fitato-app.png', alt='download fitato smartphone app')
+        img(src=`${pathPrefix}assets/img/fitato-app.png`, alt='download fitato smartphone app')

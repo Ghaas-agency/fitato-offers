@@ -1,8 +1,8 @@
-mixin nav
+mixin nav(pathPrefix)
   noscript
     iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-M6HNZB', height='0', width='0', style='display:none;visibility:hidden')
   nav.main-header
     .container
       a.menu-icon-link(href='https://www.fitato.fit')
-        img(src='/assets/img/fitato-logo-colored.svg', title='Fitato', alt='fitato logo')
+        img(src=`${pathPrefix}assets/img/fitato-logo-colored.svg`, title='Fitato', alt='fitato logo')
       a.menu-link(href='tel:+918448448546') Contact us
