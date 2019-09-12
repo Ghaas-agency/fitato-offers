@@ -66,6 +66,7 @@
     @media only screen and (max-width: 767px) {
       text-align: center;
       padding-top: 490px;
+      padding-bottom: 30px;
 
       .floating-right-img {
         top: 20px;
@@ -78,7 +79,7 @@
     
     @media only screen and (max-width: 480px) {
       padding-top: 400px;
-      padding-bottom: 120px;
+      // padding-bottom: 120px;
 
       .floating-right-img {
         max-height: 380px;
