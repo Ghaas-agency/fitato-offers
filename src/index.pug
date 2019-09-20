@@ -12,10 +12,9 @@ html(lang='en')
         //- .white-angle
         .container
           .offers-page-hero__wrapper
-            h1.italic.white.uppercase
-              span.small.bold The 3+1 Fitness Offer 
-              br
-              span Free Monthly Pass
+            h1.italic.uppercase Big 
+              span.red Bonus 
+              | Bonanza
             //- h2.italic Fitato Quarterly Pass
             //-   br
             //-   span.normal(style="font-size: 0.95em;") At 
@@ -25,21 +24,22 @@ html(lang='en')
             //-   br
             //-   span.normal(style="font-size: 0.8em;") And Get Cashback 
             //-     span.red  ₹2,222
-            p.italic.white.light.uppercase On Every Quarterly Pass Purchase
+            p.italic.uppercase.red.bold.mb-0 Fitato Quarterly Pass at
             //- .line
-            //- p.focus Flat 
-            //-   span.bold.yellow 25% Off 
-            //-   br.d-none-sm
-            //-   | On All Fitato Passes
+            p.focus.uppercase.bold.italic
+              span.red-cut ₹5499
+              |  ₹3999 +
+              br
+              | ₹999 cashback
+            a.button.align-center.normal(href='https://www.instamojo.com/@fitato/l339f1f9a34334e0b98909e1fe52ff648/', target='_blank', rel='noopener noreferrer') Buy Now
             //- img(src="", alt="offer").banner-mobile
             //- p.move-down-icon-animate
             //-   img.down-arrow(src='assets/img/icons/arrow-down.svg', width='25', alt='down arrow')
             //-   | Scroll down for the exclusive offer
-            p.use.uppercase.italic Use Coupon Code:
+            p.use.uppercase.italic.red.bold Use Coupon Code:
             p.offers-page-hero--code
-              span.italic.yellow FREEPASS
-            p.on.uppercase.italic On Your Fitato App
-            img.floating-right-img(src="assets/img/offer-freepass.png", alt="fitato offer freepass")
+              span.italic.extra-bold BONUS
+            p.on.uppercase.italic.red On Your Fitato App
 
       //- .offers-page-steps
       //-   .container
@@ -61,7 +61,7 @@ html(lang='en')
           //-   | Use Coupon Code
           //-   span.offer-highlight FLASH50
           //-   span.offer-highlight--clear on your Fitato App
-          p(style='font-size: 1.3em; font-weight: 700; padding-top: 10px') OR
+          //- p(style='font-size: 1.3em; font-weight: 700; padding-top: 10px') OR
           p(style='font-size: 1.3em; font-weight: 700; margin-bottom: 0') Pre-Book Now:
           .offers-page-plans__items
             .offers-page-plans__item
@@ -73,11 +73,11 @@ html(lang='en')
               .offers-page-plans__item--body
                 p
                   | Get unlimited access to every Fitato partner facility for three months.
-                //- p.offers-page-plans__item--price-strike ₹5,499
-                p.offers-page-plans__item--price(style="margin-top: 52px; margin-bottom: 46px;") ₹5,499
-                //- p.offers-page-plans__item--get-cb Get Cashback: ₹2,222
-              //- .offers-page-plans__item--cta
-              //-   a.button.button-fluid(href='https://imjo.in/zGvz4a', target='_blank', rel='noopener noreferrer') Buy Now
+                p.offers-page-plans__item--price-strike ₹5,499
+                p.offers-page-plans__item--price ₹3,999
+                p.offers-page-plans__item--get-cb Get Cashback: ₹999
+              .offers-page-plans__item--cta
+                a.button.button-fluid(href='https://www.instamojo.com/@fitato/l339f1f9a34334e0b98909e1fe52ff648/', target='_blank', rel='noopener noreferrer') Buy Now
             //- .offers-page-plans__item
             //-   .offers-page-plans__item--title
             //-     h3
@@ -92,34 +92,36 @@ html(lang='en')
             //-     p.offers-page-plans__item--get-cb Get Cashback: ₹1,559
             //-   .offers-page-plans__item--cta
             //-     a.button.button-fluid(href='https://imjo.in/DmymrK', target='_blank', rel='noopener noreferrer') Buy Now
-            .offers-page-plans__item
-              .offers-page-plans__item--title
-                h3
-                  | Fitato Monthly
-                  br
-                  small.normal (1 month)
-              .offers-page-plans__item--body
-                p
-                  | Get unlimited access to every Fitato partner facility for one month.
-                p.offers-page-plans__item--price-strike ₹2,199
-                p.offers-page-plans__item--price ₹0
+            //- .offers-page-plans__item
+            //-   .offers-page-plans__item--title
+            //-     h3
+            //-       | Fitato Monthly
+            //-       br
+            //-       small.normal (1 month)
+            //-   .offers-page-plans__item--body
+            //-     p
+            //-       | Get unlimited access to every Fitato partner facility for one month.
+            //-     p.offers-page-plans__item--price-strike ₹2,199
+            //-     p.offers-page-plans__item--price ₹0
                 //- p.offers-page-plans__item--get-cb Get Cashback: ₹879
               //- .offers-page-plans__item--cta
               //-   a.button.button-fluid(href='https://imjo.in/q5K9jZ', target='_blank', rel='noopener noreferrer') Buy Now
-          .buy-now(style="margin: 25px 0 35px 0")
-            a.button(href='https://imjo.in/kHjCtz', target='_blank', rel='noopener noreferrer', style="padding: 15px 30px; font-size: 20px;") Buy Now
+          //- .buy-now(style="margin: 25px 0 35px 0")
+          //-   a.button(href='https://imjo.in/kHjCtz', target='_blank', rel='noopener noreferrer', style="padding: 15px 30px; font-size: 20px;") Buy Now
 
           small
-            | * Offer valid till 15
+            | * Offer valid till 24
             sup th
             |  September 2019 midnight.
-          //- br
-          //- small * Not valid on payment made through Fitato wallet.
+          br
+          small * Not valid on payment made through Fitato wallet.
           br
           small * Pass can be activated later.
-          div(style='margin-top: 50px')
-            h4(style='margin-bottom: 5px') Have questions? Let us help.
-            a.button-inverted(href='tel:+918448448546') Talk to us
+          .offers-page-plans__help
+            h4 Have questions? Let us help.
+            a.offers-page-plans__help--call.button-inverted(href='tel:+918448448546')
+              img(src="assets/img/icons/call.svg", alt="call")
+              | Talk to us
 
       +wishWork
       +downloadApp('')
