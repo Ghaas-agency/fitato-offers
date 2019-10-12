@@ -31,9 +31,9 @@
     padding-top: 130px;
     padding-bottom: 100px;
     background-color: #111111;
-    background-image: url('../img/fitato-offer-bg.jpg');
-    background-position: calc(50% - 280px) 30px;
-    background-size: 650px;
+    background-image: url('../img/offer-2x.png');
+    background-position: calc(50% - 280px) 50px;
+    background-size: 520px;
     background-repeat: no-repeat;
     position: relative;
     min-height: 650px;
@@ -47,19 +47,21 @@
     }
 
     @media only screen and (max-width: 979px) {
-      background-position: calc(50% - 200px) center;
+      background-position: calc(50% - 170px) center;
+      background-size: 400px;
     }
     
     @media only screen and (max-width: 767px) {
       text-align: center;
-      padding-top: 400px;
+      padding-top: 470px;
       padding-bottom: 30px;
       background-position: center 25px;
       background-size: 400px;
     }
     
     @media only screen and (max-width: 480px) {
-      padding-top: 350px;
+      background-image: url('../img/offer-1x.png');
+      padding-top: 420px;
       background-size: 350px;
     }
 
@@ -74,12 +76,20 @@
     }
 
     .offer-img {
-      max-width: 280px;
+      max-width: 500px;
       border-bottom: 1px solid $f;
       padding-bottom: 15px;
 
-      @media only screen and (max-width: 480px) {
-        max-width: 60%;
+      @media only screen and (max-width: 1200px) {
+        max-width: 450px;
+      }
+
+      @media only screen and (max-width: 979px) {
+        max-width: 270px;
+      }
+
+      @media only screen and (max-width: 767px) {
+        max-width: 90%;
       }
     }
 
