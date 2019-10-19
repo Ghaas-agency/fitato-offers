@@ -29,16 +29,16 @@
 .offers-page {
   &-hero {
     padding-top: 130px;
-    padding-bottom: 100px;
-    background-color: #111111;
-    background-image: url('../img/offer-2x.png');
+    padding-bottom: 10px;
+    // background-color: #111111;
+    background-image: url('../img/offer-2x.jpg');
     background-position: calc(50% - 280px) 50px;
     background-size: 520px;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 650px;
+    min-height: 550px;
     margin-bottom: -1px;
-    overflow: hidden;
+    // overflow: hidden;
 
     @media only screen and (max-width: 1200px) {
       padding-bottom: 180px;
@@ -53,23 +53,23 @@
     
     @media only screen and (max-width: 767px) {
       text-align: center;
-      padding-top: 470px;
+      padding-top: 270px;
       padding-bottom: 30px;
       background-position: center 25px;
       background-size: 400px;
     }
     
     @media only screen and (max-width: 480px) {
-      background-image: url('../img/offer-1x.png');
-      padding-top: 420px;
+      background-image: url('../img/offer-1x.jpg');
+      padding-top: 230px;
       background-size: 350px;
     }
 
     &__wrapper {
-      max-width: 50%;
+      max-width: 45%;
       margin-left: auto;
-      text-align: center;
-
+      padding-top: 150px;
+      
       @media only screen and (max-width: 767px) {
         max-width: 100%;
       }
@@ -124,7 +124,7 @@
 
     h2 {
       margin-top: 0px;
-      font-size: 42px;
+      font-size: 46px;
       line-height: 1;
 
       .small {
@@ -133,11 +133,11 @@
       }
 
       @media only screen and (max-width: 979px) {
-        font-size: 28px;
+        font-size: 38px;
       }
 
       @media only screen and (max-width: 767px) {
-        line-height: 1.2;
+        line-height: 1.1;
       }
     }
 
@@ -170,7 +170,7 @@
       
       span {
         padding: 8px 20px;
-        border: 2px dashed $red;
+        border: 2px dashed $dark-grey;
         color: $dark-grey;
       }
     }
@@ -184,7 +184,8 @@
     p.on {
       font-size: 0.9em;
       color: $dark-grey;
-      opacity: 0.5;
+      opacity: 0.85;
+      letter-spacing: 0;
     }
 
     p.use {
@@ -208,6 +209,22 @@
     .red-angle {
       border-width: 0 0 100px 100vw;
       border-color: transparent transparent $red transparent;
+    }
+
+    .floating-rect {
+      position: absolute;
+      top: 450px;
+      left: calc(50% + 650px);
+      width: 400px;
+
+      @media only screen and (max-width: 1200px) {
+        left: 94%;
+      }
+
+      @media only screen and (max-width: 767px) {
+        left: 90%;
+        width: 250px;
+      }
     }
   }
 
