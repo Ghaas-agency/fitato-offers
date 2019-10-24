@@ -30,68 +30,92 @@
   &-hero {
     padding-top: 130px;
     padding-bottom: 10px;
-    // background-color: #111111;
+    background-color: $red;
     background-image: url('../img/offer-2x.jpg');
-    background-position: calc(50% - 280px) 50px;
-    background-size: 520px;
+    background-position: right center;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    min-height: 550px;
+    min-height: 780px;
     margin-bottom: -1px;
     // overflow: hidden;
 
+    @media only screen and (max-width: 1380px) {
+      min-height: 700px;
+      background-position: center;
+    }
+
     @media only screen and (max-width: 1200px) {
-      padding-bottom: 180px;
-      background-position: calc(50% - 260px) center;
-      background-size: 500px;
+      min-height: 500px;
+      background-position: center -80px;
+      background-size: contain;
+
+      .res-row {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        & > div {
+          flex: 2;
+
+          &:nth-child(2) {
+            flex: 1;
+          }
+        }
+      }
     }
 
     @media only screen and (max-width: 979px) {
-      background-position: calc(50% - 170px) center;
-      background-size: 400px;
+      background-position: center -10px;
     }
     
     @media only screen and (max-width: 767px) {
-      text-align: center;
-      padding-top: 270px;
-      padding-bottom: 30px;
-      background-position: center 25px;
-      background-size: 400px;
-    }
-    
-    @media only screen and (max-width: 480px) {
       background-image: url('../img/offer-1x.jpg');
-      padding-top: 230px;
-      background-size: 350px;
+      background-size: 130%;
+      background-position: left top;
+
+      .res-row {
+        flex-direction: column;
+      }
     }
 
     &__wrapper {
-      max-width: 45%;
+      max-width: 30%;
       margin-left: auto;
-      padding-top: 150px;
-      
-      @media only screen and (max-width: 767px) {
-        max-width: 100%;
-      }
-    }
-
-    .offer-img {
-      max-width: 500px;
-      border-bottom: 1px solid $f;
-      padding-bottom: 15px;
+      padding-top: 50px;
 
       @media only screen and (max-width: 1200px) {
-        max-width: 450px;
+        padding-top: 37vw;
+        padding-bottom: 50px;
+        max-width: 100%;
       }
-
-      @media only screen and (max-width: 979px) {
-        max-width: 270px;
-      }
-
+      
       @media only screen and (max-width: 767px) {
-        max-width: 90%;
+        padding-top: 50vw;
+      }
+
+      @media only screen and (max-width: 480px) {
+        padding-top: 42vw;
       }
     }
+
+    // .offer-img {
+    //   max-width: 500px;
+    //   border-bottom: 1px solid $f;
+    //   padding-bottom: 15px;
+
+    //   @media only screen and (max-width: 1200px) {
+    //     max-width: 450px;
+    //   }
+
+    //   @media only screen and (max-width: 979px) {
+    //     max-width: 270px;
+    //   }
+
+    //   @media only screen and (max-width: 767px) {
+    //     max-width: 90%;
+    //   }
+    // }
 
     p {
       font-size: 20px;
@@ -101,45 +125,45 @@
       margin-bottom: 15px;
     }
 
-    // h1 {
-    //   margin: 0;
-    //   margin-bottom: 25px;
-    //   font-size: 4.2em;
-    //   line-height: 0.9;
-    //   font-weight: 900;
-    //   padding: 12px 0;
-
-    //   .small {
-    //     font-size: 0.5em;
-    //   }
-
-    //   @media only screen and (max-width: 979px) {
-    //     font-size: 50px;
-    //   }
-
-    //   @media only screen and (max-width: 767px) {
-    //     font-size: 35px;
-    //   }
-    // }
-
-    h2 {
-      margin-top: 0px;
-      font-size: 46px;
-      line-height: 1;
+    h1 {
+      margin: 0;
+      margin-bottom: 5px;
+      font-size: 2.3em;
+      // line-height: 0.9;
+      font-weight: 900;
+      padding: 12px 0;
 
       .small {
-        font-weight: 300;
-        font-size: 20px;
+        font-size: 0.5em;
       }
 
       @media only screen and (max-width: 979px) {
-        font-size: 38px;
+        font-size: 2em;
       }
 
       @media only screen and (max-width: 767px) {
-        line-height: 1.1;
+        font-size: 1.8em;
       }
     }
+
+    // h2 {
+    //   margin-top: 0px;
+    //   font-size: 46px;
+    //   line-height: 1;
+
+    //   .small {
+    //     font-weight: 300;
+    //     font-size: 20px;
+    //   }
+
+    //   @media only screen and (max-width: 979px) {
+    //     font-size: 38px;
+    //   }
+
+    //   @media only screen and (max-width: 767px) {
+    //     line-height: 1.1;
+    //   }
+    // }
 
     p.focus {
       color: $dark-grey;
@@ -170,12 +194,11 @@
       
       span {
         padding: 8px 20px;
-        border: 2px dashed $dark-grey;
-        color: $dark-grey;
+        border: 2px dashed $f;
       }
     }
 
-    a.button {
+    a.button-inverted {
       width: 200px;
       font-size: 1.2em;
     }
@@ -193,39 +216,23 @@
       font-size: 1em;
     }
 
-    .white-angle,
-    .red-angle {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 0 80px 100vw;
-      border-color: transparent transparent $f transparent;
-    }
+    // .white-angle,
+    // .red-angle {
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 0;
+    //   width: 0;
+    //   height: 0;
+    //   border-style: solid;
+    //   border-width: 0 0 80px 100vw;
+    //   border-color: transparent transparent $f transparent;
+    // }
 
-    .red-angle {
-      border-width: 0 0 100px 100vw;
-      border-color: transparent transparent $red transparent;
-    }
-
-    .floating-rect {
-      position: absolute;
-      top: 450px;
-      left: calc(50% + 650px);
-      width: 400px;
-
-      @media only screen and (max-width: 1200px) {
-        left: 94%;
-      }
-
-      @media only screen and (max-width: 767px) {
-        left: 90%;
-        width: 250px;
-      }
-    }
+    // .red-angle {
+    //   border-width: 0 0 100px 100vw;
+    //   border-color: transparent transparent $red transparent;
+    // }
   }
 
   // &-steps {
