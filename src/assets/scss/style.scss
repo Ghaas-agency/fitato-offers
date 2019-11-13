@@ -28,74 +28,54 @@
 
 .offers-page {
   &-hero {
-    padding-top: 130px;
+    padding-top: 100px;
     padding-bottom: 10px;
-    background-color: $red;
+    // background-color: $red;
     background-image: url('../img/offer-2x.jpg');
-    background-position: right center;
-    background-size: cover;
+    background-position: calc(50% + 250px) center;
+    background-size: 800px;
     background-repeat: no-repeat;
     position: relative;
     min-height: 780px;
     margin-bottom: -1px;
     // overflow: hidden;
 
-    @media only screen and (max-width: 1380px) {
-      min-height: 700px;
-      background-position: center;
-    }
-
-    @media only screen and (max-width: 1200px) {
-      min-height: 500px;
-      background-position: center -80px;
-      background-size: contain;
-
-      .res-row {
-        display: flex;
-        align-items: center;
-        text-align: center;
-
-        & > div {
-          flex: 2;
-
-          &:nth-child(2) {
-            flex: 1;
-          }
-        }
-      }
-    }
-
     @media only screen and (max-width: 979px) {
-      background-position: center -10px;
+      background-size: 600px;
+      background-position: calc(50% + 150px) center;
     }
     
     @media only screen and (max-width: 767px) {
       background-image: url('../img/offer-1x.jpg');
-      background-size: 130%;
-      background-position: left top;
+      background-size: 500px;
+      background-position: center -50px;
+    }
+    
+    @media only screen and (max-width: 480px) {
+      background-size: 400px;
+      background-position: center top;
+    }
 
-      .res-row {
-        flex-direction: column;
-      }
+    @media only screen and (max-width: 380px) {
+      background-size: 370px;
     }
 
     &__wrapper {
-      max-width: 30%;
-      margin-left: auto;
-      padding-top: 50px;
-
-      @media only screen and (max-width: 1200px) {
-        padding-top: 37vw;
-        padding-bottom: 50px;
-        max-width: 100%;
-      }
+      // max-width: 30%;
+      // margin-left: auto;
+      // padding-top: 50px;
       
       @media only screen and (max-width: 767px) {
-        padding-top: 50vw;
+        padding-top: 350px;
+        text-align: center;
       }
 
       @media only screen and (max-width: 480px) {
-        padding-top: 42vw;
+        padding-top: 280px;
+      }
+
+      @media only screen and (max-width: 380px) {
+        padding-top: 250px;
       }
     }
 
@@ -127,9 +107,9 @@
 
     h1 {
       margin: 0;
-      margin-bottom: 5px;
-      font-size: 2.3em;
-      // line-height: 0.9;
+      margin-bottom: 30px;
+      font-size: 4.2em;
+      line-height: 0.9;
       font-weight: 900;
       padding: 12px 0;
 
@@ -138,32 +118,37 @@
       }
 
       @media only screen and (max-width: 979px) {
-        font-size: 2em;
+        font-size: 3.4em;
       }
 
       @media only screen and (max-width: 767px) {
-        font-size: 1.8em;
+        font-size: 2.8em;
+      }
+      
+      @media only screen and (max-width: 480px) {
+        font-size: 2.5em;
       }
     }
 
-    // h2 {
-    //   margin-top: 0px;
-    //   font-size: 46px;
-    //   line-height: 1;
+    h2 {
+      margin-top: 0px;
+      font-size: 1.5em;
+      line-height: 1;
+      letter-spacing: 1px;
 
-    //   .small {
-    //     font-weight: 300;
-    //     font-size: 20px;
-    //   }
+      .small {
+        font-weight: 300;
+        font-size: 20px;
+      }
 
-    //   @media only screen and (max-width: 979px) {
-    //     font-size: 38px;
-    //   }
+      @media only screen and (max-width: 979px) {
+        font-size: 1.35em;
+      }
 
-    //   @media only screen and (max-width: 767px) {
-    //     line-height: 1.1;
-    //   }
-    // }
+      @media only screen and (max-width: 480px) {
+        font-size: 1.15em;
+      }
+    }
 
     p.focus {
       color: $dark-grey;
@@ -194,7 +179,7 @@
       
       span {
         padding: 8px 20px;
-        border: 2px dashed $f;
+        border: 2px dashed $red;
       }
     }
 
@@ -457,6 +442,7 @@
 
     @media (max-width: 767px) {
       padding: 50px 2%;
+      padding-bottom: 100px;
       margin-top: 0px;
       text-align: center;
 
