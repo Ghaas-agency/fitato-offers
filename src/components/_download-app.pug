@@ -1,8 +1,8 @@
-mixin downloadApp(pathPrefix)
+mixin downloadApp(pathPrefix, title)
   section.partial-download-swipe
     .container
       .partial-download-swipe__left
-        h2 Download the Fitato App
+        h2=`${title || 'Download the Fitato App'}`
         p
           | Swim your way to Zumba via MMA and Yoga! Experiment each day with a new adventure and push your body to the limits with your Fitato Pass.
         .partial-app-icons

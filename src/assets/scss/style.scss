@@ -477,12 +477,18 @@
 
     h2 {
       line-height: 1.2em;
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     p {
       font-size: 20px;
       margin-bottom: 0;
       line-height: 1.4em;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     @media (max-width: 767px) {
