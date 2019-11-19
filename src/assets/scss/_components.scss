@@ -172,3 +172,33 @@ input[type="submit"] {
     display: none;
   }
 }
+
+.sticky-timer {
+  height: 40px;
+
+  &-content {
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $red;
+    color: $f;
+    height: 40px;
+    -webkit-box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 1px 3px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 1px 3px 0 rgba(0,0,0,0.12);
+    text-align: center;
+    padding: 8px 0;
+
+    img {
+      width: 20px;
+      vertical-align: text-top;
+      filter: invert(1);
+      margin: 0;
+      margin-right: 10px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 0.9em;
+    }
+  }
+}
