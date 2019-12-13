@@ -30,9 +30,9 @@
   &-hero {
     padding-top: 100px;
     padding-bottom: 10px;
-    background-color: #111111;
+    // background-color: #111111;
     background-image: url('../img/offer-2x.png');
-    background-position: calc(50% - 250px) center;
+    background-position: calc(50% + 350px) center;
     background-size: 600px;
     background-repeat: no-repeat;
     position: relative;
@@ -42,43 +42,50 @@
 
     @media only screen and (max-width: 1200px) {
       background-size: 600px;
-      background-position: calc(50% - 200px) center;
+      background-position: calc(50% + 250px) center;
     }
 
     @media only screen and (max-width: 979px) {
       background-size: 50vw;
-      background-position: calc(50% - 150px) center;
+      background-position: calc(50% + 200px) center;
     }
     
     @media only screen and (max-width: 767px) {
       background-image: url('../img/offer-1x.png');
       background-size: 400px;
-      background-position: calc(50% + 50px) 20px;
-      padding-bottom: 50px;
+      background-position: 50% 0px;
     }
     
     @media only screen and (max-width: 480px) {
       background-size: 300px;
-      background-position: center 30px;
     }
 
     &__wrapper {
-      max-width: 40%;
-      margin-left: auto;
-      padding-top: 100px;
+      max-width: 400px;
+      margin-left: 100px;
+      padding-top: 0px;
+
+      .hero-title {
+        margin-bottom: 50px;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        margin-left: 0;
+      }
       
       @media only screen and (max-width: 767px) {
-        padding-top: 350px;
+        padding-top: 400px;
         text-align: center;
         max-width: 100%;
+
+        .hero-title {
+          width: 350px;
+          margin-bottom: 25px;
+        }
       }
 
       @media only screen and (max-width: 480px) {
-        padding-top: 230px;
-      }
-
-      @media only screen and (max-width: 380px) {
-        padding-top: 250px;
+        padding-top: 270px;
       }
     }
 
