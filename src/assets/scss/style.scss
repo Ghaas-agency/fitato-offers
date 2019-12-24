@@ -30,7 +30,7 @@
   &-hero {
     padding-top: 100px;
     padding-bottom: 10px;
-    // background-color: #111111;
+    background-color: $dark-grey;
     background-image: url('../img/offer-2x.png');
     background-position: calc(50% + 350px) center;
     background-size: 600px;
@@ -52,17 +52,12 @@
     
     @media only screen and (max-width: 767px) {
       background-image: url('../img/offer-1x.png');
-      background-size: 400px;
-      background-position: 50% 0px;
-    }
-    
-    @media only screen and (max-width: 480px) {
-      background-size: 300px;
+      background-size: 370px;
+      background-position: 50% 30px;
     }
 
     &__wrapper {
-      max-width: 400px;
-      margin-left: 100px;
+      max-width: 600px;
       padding-top: 0px;
 
       .hero-title {
@@ -117,26 +112,26 @@
     h1 {
       display: inline-block;
       margin: 0;
-      margin-bottom: 30px;
-      font-size: 4.2em;
-      line-height: 0.9;
+      margin-bottom: 15px;
+      font-size: 2.8em;
+      line-height: 1.2;
       font-weight: 900;
       padding: 12px 0;
 
       .small {
-        font-size: 0.5em;
+        font-size: 0.7em;
       }
 
       @media only screen and (max-width: 979px) {
-        font-size: 3.4em;
+        font-size: 2.4em;
       }
 
       @media only screen and (max-width: 767px) {
-        font-size: 2.8em;
+        font-size: 2em;
       }
       
       @media only screen and (max-width: 480px) {
-        font-size: 2.5em;
+        font-size: 1.8em;
       }
     }
 
@@ -161,23 +156,11 @@
     }
 
     p.focus {
-      font-size: 2.5em;
-      line-height: 1.1;
+      font-size: 1.5em;
+      line-height: 1.32;
 
-      .red-cut {
-        position: relative;
-        color: #4b4b4b;
-
-        &::before {
-          content: '';
-          position: absolute;
-          top: 18px;
-          left: 0;
-          height: 4px;
-          width: 100%;
-          transform: rotate(-10deg);
-          background-color: $red;
-        }
+      .small {
+        font-size: 0.8em;
       }
     }
 
@@ -678,6 +661,32 @@
           margin: 0 5px 2px 0;
         }
       }
+    }
+  }
+}
+
+.offer-wish {
+  background-color: $red;
+  padding: 50px 0;
+
+  h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    line-height: 1.23;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 1.2em;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.2em;
+    max-width: 800px;
+
+    @media only screen and (max-width: 767px) {
+      font-size: 1em;
     }
   }
 }
