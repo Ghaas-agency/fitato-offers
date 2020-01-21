@@ -156,6 +156,11 @@ input[type="submit"] {
   font-size: 18px;
 }
 
+.button.button-yellow {
+  background-color: $yellow;
+  color: initial;
+}
+
 .offer {
   padding: 10px;
   background-color: rgba(255, 222, 95, 1);

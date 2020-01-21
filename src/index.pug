@@ -13,17 +13,20 @@ html(lang='en')
 
     main(style="overflow: hidden;")
       .offers-page-hero
+        .red-triangle
         //- .red-angle
         //- .white-angle
         .container
           .offers-page-hero__wrapper
-            h1.italic.white
-              span.small.normal Embark On A
-              br
-              span.extra-bold New Fitness Journey
-                br
-                | In 
-                span.yellow 2020
+            h1
+              img(src="assets/img/stepping-up.svg", alt="stepping up")
+            //- h1.italic.white
+            //-   span.small.normal Embark On A
+            //-   br
+            //-   span.extra-bold New Fitness Journey
+            //-     br
+            //-     | In 
+            //-     span.yellow 2020
             //- h2.light Get Fitato Quarterly
             //-   br
             //-   span.extra-bold.italic(style="font-size: 1.1em;") At 
@@ -33,27 +36,55 @@ html(lang='en')
             //-   span.normal(style="font-size: 0.8em;") And Get Cashback 
             //-     span.red  ₹2,222
             //- .line
-            p.focus.bold.white(style="margin-bottom: 10px;") Get Fitato Quarterly At 
-              strike ₹6,599
-              br
-              span.yellow ₹3,999
-              |  Only
-            #offer-data(style="display: none;")
-              //- a.button.button-large.align-center.normal(href='https://imjo.in/XNXZCt', target='_blank', rel='noopener noreferrer') Buy Now
-              //- img(src="", alt="offer").banner-mobile
-              //- p.move-down-icon-animate
-              //-   img.down-arrow(src='assets/img/icons/arrow-down.svg', width='25', alt='down arrow')
-              //-   | Scroll down for the exclusive offer
-              //- p(style='font-size: 1.3em; padding-top: 30px;').bold.italic OR
-              p.use.yellow(style="margin-top: 25px;") Use Coupon Code:
-              p.offers-page-hero--code
-                span.extra-bold.yellow FIT2020
-              p.on On Your Fitato App
+            p.focus.align-center.white(style="margin-bottom: 10px;") A new, improved Fitato to help you bring out the best of you.
+            .align-center(style="margin-top: 30px")
+              a.button.button-yellow(href="#get-started") Get Started
+            //- #offer-data(style="display: none;")
+            //-   //- a.button.button-large.align-center.normal(href='https://imjo.in/XNXZCt', target='_blank', rel='noopener noreferrer') Buy Now
+            //-   //- img(src="", alt="offer").banner-mobile
+            //-   //- p.move-down-icon-animate
+            //-   //-   img.down-arrow(src='assets/img/icons/arrow-down.svg', width='25', alt='down arrow')
+            //-   //-   | Scroll down for the exclusive offer
+            //-   //- p(style='font-size: 1.3em; padding-top: 30px;').bold.italic OR
+            //-   p.use.yellow(style="margin-top: 25px;") Use Coupon Code:
+            //-   p.offers-page-hero--code
+            //-     span.extra-bold.yellow FIT2020
+            //-   p.on On Your Fitato App
 
-      section.offer-wish
+      //- section.offer-wish
+      //-   .container
+      //-     h2.white Wish to avail this offer and start in 2020?
+      //-     p.white No worries. Book your pass through the link below and you can start your membership at the time of your convenience.
+
+      .offer-features.align-center
         .container
-          h2.white Wish to avail this offer and start in 2020?
-          p.white No worries. Book your pass through the link below and you can start your membership at the time of your convenience.
+          p.offer-features--heading
+            span.bold In the year 2020
+            |  - our resolution is to make fitness more enjoyable for you. Something you can easily stick with. Something you don’t have to struggle with each morning (or evening). A fitness community that’ll drive you to be the best version of yourself. And to do that, we have:
+          .offer-features__items
+            .offer-features__item
+              img(src="assets/img/fitato-exclusive-workouts.jpg", alt="")
+              div
+                h3 Fitato Exclusive Workouts
+                p The best fitness classes your city has to offer, conducted by experienced instructors, Fitato Exclusives is designed to introduce you to a world of fitness beyond the traditional gyms. Parkour, Rock Climbing, Martial Arts, Aerial Yoga and a lot more - Fitato Exclusives will change how you imagine fitness.
+            .offer-features__item
+              img(src="assets/img/weekend-specials.jpg", alt="")
+              div
+                h3 Weekend Specials
+                p Ever wanted to try your hands on Kayaking? Or a night trek under serene stars - far away from the city’s hustle-bustle. Join us for the Weekend Specials where we bring you exciting activities that’ll recharge you to take on the week ahead.
+          p.offer-features--footer.bold Check out the Fitato Exclusive sections on your Fitato app to know more.
+
+      .offer-coupon.align-center
+        .container
+          .offer-coupon__items
+            .offer-coupon__item
+            .offer-coupon__item
+              p Have you been a Fitato member and have not renewed your Fitato pass? We’d love to have you try the Fitato Exclusives!
+              p.offer-coupon--offer.bold Get 25% Off + 25% Cashback
+                br
+                span On All Fitato Passes
+              p.offer-coupon--code
+                span STEPUP
 
       //- .offers-page-steps
       //-   .container
@@ -67,7 +98,7 @@ html(lang='en')
       //-         strong GET
       //-       .offers-page-steps__left--item
       //-         p 20% Discount + 30% Cashback
-      .offers-page-intro(style="padding-top: 10px;")
+      .offers-page-intro#get-started
         .container
           //- p.offer-title-highlight Republic Day Offer
           //- h2 Purchase Any Fitato Membership and Get 50% Cashback In Your Fitato Wallet
@@ -89,63 +120,104 @@ html(lang='en')
                   | Get unlimited access to every Fitato partner facility for three months.
                 p.offers-page-plans__item--price-strike ₹6,599
                 p.offers-page-plans__item--price ₹3,999
-                //- p.offers-page-plans__item--get-cb Get Cashback: ₹1,649
+                p.offers-page-plans__item--get-cb Get Cashback: ₹1,649
                 //- p.offers-page-plans__item--get-cb(style="margin-top: 15px;")
                 //-   span.bold Post Hike Price:
                 //-   |  ₹6,599
               .offers-page-plans__item--cta
-                a.button.button-fluid(href='https://imjo.in/MUrStg', target='_blank', rel='noopener noreferrer') Buy Now
-            //- .offers-page-plans__item
-            //-   .offers-page-plans__item--title
-            //-     h3
-            //-       | Fitato Bi-Monthly
-            //-       br
-            //-       small.normal (2 months)
-            //-   .offers-page-plans__item--body
-            //-     p
-            //-       | Get unlimited  access to every Fitato partner facility for two months.
-            //-     p.offers-page-plans__item--price-strike ₹4,599
-            //-     p.offers-page-plans__item--price ₹2,299
-            //-     p.offers-page-plans__item--get-cb Get Cashback: ₹1,149
-            //-     //- p.offers-page-plans__item--get-cb(style="margin-top: 15px;")
-            //-     //-   span.bold Post Hike Price:
-            //-     //-   |  ₹4,599
-            //-   .offers-page-plans__item--cta
-            //-     a.button.button-fluid(href='https://imjo.in/4CGPYs', target='_blank', rel='noopener noreferrer') Buy Now
-            //- .offers-page-plans__item
-            //-   .offers-page-plans__item--title
-            //-     h3
-            //-       | Fitato Monthly
-            //-       br
-            //-       small.normal (1 month)
-            //-   .offers-page-plans__item--body
-            //-     p
-            //-       | Get unlimited access to every Fitato partner facility for one month.
-            //-     p.offers-page-plans__item--price-strike ₹2,499
-            //-     p.offers-page-plans__item--price ₹1,249
-            //-     p.offers-page-plans__item--get-cb Get Cashback: ₹624
-            //-     //- p.offers-page-plans__item--get-cb(style="margin-top: 15px;")
-            //-     //-   span.bold Post Hike Price:
-            //-     //-   |  ₹2,599
-            //-   .offers-page-plans__item--cta
-            //-     a.button.button-fluid(href='https://imjo.in/E8Nafb', target='_blank', rel='noopener noreferrer') Buy Now
+                a.button.button-fluid(href='https://www.instamojo.com/@fitato/l4c2bd36a8fb241a293006bf6ff6b70bb/', target='_blank', rel='noopener noreferrer') Buy Now
+            .offers-page-plans__item
+              .offers-page-plans__item--title
+                h3
+                  | Fitato Bi-Monthly
+                  br
+                  small.normal (2 months)
+              .offers-page-plans__item--body
+                p
+                  | Get unlimited  access to every Fitato partner facility for two months.
+                p.offers-page-plans__item--price-strike ₹4,599
+                p.offers-page-plans__item--price ₹2,299
+                p.offers-page-plans__item--get-cb Get Cashback: ₹1,149
+                //- p.offers-page-plans__item--get-cb(style="margin-top: 15px;")
+                //-   span.bold Post Hike Price:
+                //-   |  ₹4,599
+              .offers-page-plans__item--cta
+                a.button.button-fluid(href='https://www.instamojo.com/@fitato/le0fbac56a28b4782a8e2555342f6db73/', target='_blank', rel='noopener noreferrer') Buy Now
+            .offers-page-plans__item
+              .offers-page-plans__item--title
+                h3
+                  | Fitato Monthly
+                  br
+                  small.normal (1 month)
+              .offers-page-plans__item--body
+                p
+                  | Get unlimited access to every Fitato partner facility for one month.
+                p.offers-page-plans__item--price-strike ₹2,499
+                p.offers-page-plans__item--price ₹1,249
+                p.offers-page-plans__item--get-cb Get Cashback: ₹624
+                //- p.offers-page-plans__item--get-cb(style="margin-top: 15px;")
+                //-   span.bold Post Hike Price:
+                //-   |  ₹2,599
+              .offers-page-plans__item--cta
+                a.button.button-fluid(href='https://www.instamojo.com/@fitato/l1d485ef93419405baaa9a95516984ab7/', target='_blank', rel='noopener noreferrer') Buy Now
           //- .buy-now(style="margin: 25px 0 35px 0")
           //-   a.button(href='https://imjo.in/kHjCtz', target='_blank', rel='noopener noreferrer', style="padding: 15px 30px; font-size: 20px;") Buy Now
 
-          small
-            | * Offer valid till 5
-            sup th
-            |  January 2020 midnight for first-time users only.
+          small.white
+            | Offer valid till 31
+            sup st
+            |  January 2020 midnight only.
+          br
+          small.white Fitato wallet money can be used ofr payments.
           //- br
           //- small * Not valid on payment made through Fitato wallet.
-          br
-          small * Pass can be activated later.
+          //- br
+          //- small.white * Pass can be activated later.
           .offers-page-plans__help
-            h4 Have questions? Let us help.
+            h4.white Have questions? Let us help.
             a.offers-page-plans__help--call.button-inverted(href='tel:+918448448546')
               img(src="assets/img/icons/call.svg", alt="call")
               | Talk to us
 
-      +wishWork
-      +downloadApp('')
+      section.offer-facilities.align-center
+        .container
+          h2 Your one pass to the best fitness facilities the city has to offer
+          .offer-facilities__items
+            .offer-facilities__item
+              div
+                img(src="assets/img/spinning.png", alt="")
+                span Spinning
+              div
+                img(src="assets/img/gym.png", alt="")
+                span Gym
+              div
+                img(src="assets/img/yoga.png", alt="")
+                span Yoga
+              div
+                img(src="assets/img/meditation.png", alt="")
+                span Meditation
+              div
+                img(src="assets/img/community-events.png", alt="")
+                span Community Events
+              div
+                img(src="assets/img/swimming.png", alt="")
+                span Swimming
+              div
+                img(src="assets/img/zumba.png", alt="")
+                span Zumba
+              div
+                img(src="assets/img/mma.png", alt="")
+                span MMA
+            .offer-facilities__item
+              img(src="assets/img/fitato-mobile-app.jpg", alt="")
+
+      section.offer-game.align-center
+        .container
+          h2.white We're stepping up our game in 2020.
+            br
+            | Are you?
+          a.button(href="#get-started") Get Started
+
+      //- +wishWork
+      //- +downloadApp('')
     +footer
